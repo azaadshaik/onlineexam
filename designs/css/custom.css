@@ -48,3 +48,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#195fbf', end
     content: "";
     position: absolute;
     right:0;top:0;}
+
+  /* student dashboard css starts here */
+  .stu_header{background: #215dba;padding:45px 0;}
+  .stuhead_wel_txt{    color: #ffffff;font-size: 22px;letter-spacing: 8px;    text-align: right;}
+  .stu_acct-wrap .fa{color: #ffffff;font-size: 20px;}
+  .stu_acct-wrap .dropdown-menu{padding: 15px;}
+  .stu_acct-wrap .dropdown-menu .dropdown-item{width: 100%;display: inline-block;}
+  .stu_acct-wrap{text-align: right;}
+  .profile-pic{position: absolute;top:-20px;}
