@@ -1,0 +1,50 @@
+body{    font-family: Oswald !important;}
+.Signin-sec{padding: 0;font-family: Oswald;}
+.signin-inner{margin-top: 18em;}
+.sign-bgcolor{background: #222222;width: 100%;    padding: 45px 50px; box-shadow: 2px 4px 8px rgba(0,0,0,0.3);-moz-box-shadow: 2px 4px 8px rgba(0,0,0,0.3);-webkit-box-shadow: 2px 4px 8px rgba(0,0,0,0.3);   
+	display: inline-block; border-radius: 15px;-moz-border-radius: 15px;-webkit-border-radius: 15px;}
+.input-fields{font-family: Oswald !important;width: 100%;background: none;border: none;outline: none;color:#ffffff;border-bottom: 1px solid #585d72;        
+	padding-left: 3px;}
+.forgot-link{font-size: 14px;color:#8a8e9c;float: right;}
+.Username-wrap{margin-bottom: 45px;}
+.user-alert{    color: #ff0000;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    line-height: 27px;;}
+.signin-btn{background: #0067ce;    padding: 15px 70px;
+    margin-top: 25px;border: none;outline: none;    color: #ffffff;border-radius:35px;-moz-border-radius:35px;-webkit-border-radius:35px;}
+.login-center{background: url("../images/frontpage-bg.jpg");}
+.bg-cls,.signin-btn:hover{/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#195fbf+0,1071dd+100 */
+background: #195fbf; /* Old browsers */
+background: -moz-linear-gradient(left, #195fbf 0%, #1071dd 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #195fbf 0%,#1071dd 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #195fbf 0%,#1071dd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#195fbf', endColorstr='#1071dd',GradientType=1 ); /* IE6-9 */}
+.signin-btn:active{background: #8b52e8;}
+.footer-copyright{color:#ffffff;margin-top: 10px;font-weight: 200;}
+
+.input-fields::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color:#8a8e9c;
+}
+.input-fields::-moz-placeholder { /* Firefox 19+ */
+  color:#8a8e9c;
+}
+.input-fields:-ms-input-placeholder { /* IE 10+ */
+  color:#8a8e9c;
+}
+.input-fields:-moz-placeholder { /* Firefox 18- */
+  color: #8a8e9c;
+}
+.Signin-sec::before{    width: 213px;
+    height: 314px;
+    background: url(../images/pen.jpg);
+    content: "";
+    position: absolute;
+    left: 0;}
+ .Signin-sec::after{    width: 300px;
+    height: 637px;
+    background: url(../images/tab-right.png);
+    content: "";
+    position: absolute;
+    right:0;top:0;}
