@@ -683,18 +683,9 @@
      FOOTER              
   -----------------------------------------*/
 
-  footer {
-    background: #000000;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    position: relative;
-    padding-top: 80px;
-    padding-bottom: 60px;
-  }
+  
 
-  footer h2 {
-    color: #ffffff;
-  }
+
 
   .footer-link {
     margin: 0;
@@ -884,9 +875,13 @@
   /*---------------------------------------
      RESPONSIVE STYLES              
   -----------------------------------------*/
+@media screen and (max-width: 1400px) {
+  
 
+}
   @media screen and (max-width: 1170px) {
 
+.container{width: 100%;}
     .custom-navbar .navbar-nav.navbar-nav-first {
       margin-left: inherit;
     }

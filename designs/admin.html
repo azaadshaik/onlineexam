@@ -16,9 +16,9 @@
       <link rel="stylesheet" href="css/templatemo-style.css">
       <link rel="stylesheet" href="css/custom.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    
    </head>
    <body>
+      <!-- Header -->
       <header class="stu_header">
          <div class="container">
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12"><img src="images/logo.png"></div>
@@ -42,39 +42,74 @@
             </div>
          </div>
       </header>
-      <!-- Nav tabs -->
-      <!-- Tab panes -->
+      <!-- Header ends -->
+
+      <!-- Center Container -->
       <section class="stu_mid_sec">
-         <img class="bg_img" src="images/dashbaord_bg.jpg">
-         <div class="top_con container">
+         <img class="bg_img" src="images/dashbaord_bg2.jpg">
+         <div class="top_con container admin_container">
+            
             <div class="left_wrap1 col-lg-3 col-md-3 col-sm-3 col-xs-3">
                <div class="stu_sec_left">
                   <ul class="nav nav-tabs">
                      <button class="tog_btn"><i  class="fa fa-cog" style="position: absolute;right: 0;color: #fff;font-size: 24px;cursor: pointer;"></i></button>
-                   
-
-                     <li class="dash-ico nav-link active"><a  data-toggle="tab" href="#dashboard_tab">Dashboard</a><i  class="fa fa-caret-down"></i></li>
-                     <li class="hist-ico nav-link"><a data-toggle="tab" href="#history_tab">History</a><i  class="fa fa-caret-down"></i></li>
+                     <li class="dash-ico nav-link active"><a  data-toggle="tab" href="#UReg_tab">User Registration</a><i  class="fa fa-caret-down"></i></li>
+                     <li class="hist-ico nav-link"><a data-toggle="tab" href="#history_tab">Create School</a><i  class="fa fa-caret-down"></i></li>
                      <li class="exam-ico nav-link"><a data-toggle="tab" href="#exam_tab">Start Exam</a><i  class="fa fa-caret-down"></i></li>
                      <li class="repo-ico nav-link"><a data-toggle="tab" href="#reports_tab">Reports</a><i  class="fa fa-caret-down"></i></li>
                   </ul>
                </div>
-
             </div>
-            <div class="right_wrap1 col-lg-9">
-              
+            <div class="right_wrap1 col-lg-8 col-md-8 col-sm-8 col-xs-8 pull-right">
+               <h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">User Registration</h2>
                <div class="tab-content">
-                  <div id="dashboard_tab" class="tab-pane fade in active">
-                     <h3>Dashboard</h3>
-                     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                        <div class="stu_tot_test">
-                           <h3 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Total Main Tests</h3>
-                           <h2>24</h2>
+                  <div id="UReg_tab" class="tab-pane fade in active">
+                     
+                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="adm_inputs_wrap">
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">User Name *</label>
+                           <input class="col-lg-6 col-md-6 col-sm-12 col-xs-12" type="text" class="input-fields form-control" placeholder="User Name" id="Username" name="Username" required="">
+                        </div>
+                        <div class="adm_inputs_wrap">
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">User Email</label>
+                           <input class="col-lg-6 col-md-6 col-sm-12 col-xs-12" type="text" class="input-fields form-control" placeholder="User Email" id="Useremail" name="Useremail" >
+                        </div>
+                        <div class="adm_inputs_wrap">
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">First Name</label>
+                           <input class="col-lg-6 col-md-6 col-sm-12 col-xs-12" type="text" class="input-fields form-control" placeholder="First Name" id="FirstName" name="FirstName" >
+                        </div>
+                        <div class="adm_inputs_wrap">
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Last Name</label>
+                           <input class="col-lg-6 col-md-6 col-sm-12 col-xs-12" type="text" class="input-fields form-control" placeholder="Last Name" id="LastName" name="LastName" >
+                        </div>
+                        <div class="adm_inputs_wrap">
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Phone No</label>
+                           <input class="col-lg-6 col-md-6 col-sm-12 col-xs-12" type="text" class="input-fields form-control" placeholder="Phone No" id="PhoneNo" name="PhoneNo" >
+                        </div>
+                        <div class="adm_inputs_wrap">
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">User Role</label>
+                           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 drop_down">
+                              <div class="form-group">
+                                 <select class="dropdown form-control" id="sel1">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                 </select>
+                              </div>
+                           </div>
+                           <div class="adm_inputs_wrap">
+                              <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Address</label>
+                              <textarea rows="3" cols="12" class="col-lg-6 col-md-6 col-sm-12 col-xs-12"></textarea>
+                           </div>
+                           <div class="col-md-12">
+                              <button class="signin-btn">Sign In</button>
+                           </div>
                         </div>
                      </div>
                   </div>
                   <div id="history_tab" class="tab-pane fade">
-                     <h3>Menu 1</h3>
+                     <h3>Create School</h3>
                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                   </div>
                   <div id="exam_tab" class="tab-pane fade">
@@ -86,15 +121,20 @@
                      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
                   </div>
                </div>
-           
             </div>
          </div>
       </section>
+      <!-- Center Container ends-->
+
+      <footer class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+         <p>Copyright © 2018</p>
+      </footer>
+
       <!-- SCRIPTS -->
-        <script type="text/javascript">
+      <script type="text/javascript">
          $(".tog_btn").click(function(){
          $(".top_con").toggleClass("minimise_Con");
-      });
+         });
       </script>
       <script src="js/jquery.js"></script>
       <script src="js/bootstrap.min.js"></script>
