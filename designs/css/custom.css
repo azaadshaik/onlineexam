@@ -1,4 +1,5 @@
 body{    font-family: Oswald !important;background: #126cc3;}
+
 .Signin-sec{padding: 0;font-family: Oswald;}
 .signin-inner{margin-top: 18em;}
 .sign-bgcolor{background: #222222;width: 100%;    padding: 45px 50px; box-shadow: 2px 4px 8px rgba(0,0,0,0.3);-moz-box-shadow: 2px 4px 8px rgba(0,0,0,0.3);-webkit-box-shadow: 2px 4px 8px rgba(0,0,0,0.3);   
@@ -66,14 +67,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#195fbf', end
   .stu_sec_left .nav-link a{display: inline;padding: 0;color: #ffffff !important;}
   .stu_sec_left .nav-link a:hover{margin-left: 2px;}
   .stu_sec_left .nav-link.active a{background: none;color:#000000 !important;}
-  .minimise_Con .left_wrap1{width: 8.33333333%;transition-property: all;
+  .left_wrap1{padding:0 !important}
+  .minimise_Con .left_wrap1{width:0%;transition-property: all;
   transition-duration: .5s;
   transition-timing-function: cubic-bezier(0, 1, 0.5, 1);}
-  .minimise_Con .right_wrap1{width: 91.66666667%;transition-property: all;
+  .minimise_Con .left_wrap1 .stu_sec_left{padding:0%;}
+  .minimise_Con .right_wrap1{display:inline-block !important;width: 91.66666667%;transition-property: all;
   transition-duration: .5s;
   transition-timing-function: cubic-bezier(0, 1, 0.5, 1);}
-  .tog_btn{background: none;outline: none;border: none;}
-  .minimise_Con ul li a{ display: none !important;}
+  .slide-toggle{outline: none;display: inline-block;float: left;}
+  .slide-toggle .icon-bar{background: #ffffff;}
+  .minimise_Con ul li a,.minimise_Con ul li i{ display: none !important;}
   .stu_sec_left .nav-link i{float: right;    }
   .stu_sec_left .tog_btn i{background: #aa7bf6;
     right: -18px !important;

@@ -21,7 +21,18 @@
       <!-- Header -->
       <header class="stu_header">
          <div class="container">
-            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12"><img src="images/logo.png"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                <button class="slide-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">   
+              
+              
+                     <img src="images/logo.png">
+            </div>
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 pull-right">
                <span class="stuhead_wel_txt col-lg-5 col-md-5 col-sm-5 col-xs-5">Welcome</span> 
                <div class="stu_acct-wrap col-lg-4 col-md-4 col-sm-4 col-xs-4">
@@ -47,12 +58,12 @@
       <!-- Center Container -->
       <section class="stu_mid_sec">
          <img class="bg_img" src="images/dashbaord_bg2.jpg">
-         <div class="top_con container admin_container">
+         <div class="top_con admin_container">
             
             <div class="left_wrap1 col-lg-3 col-md-3 col-sm-3 col-xs-3">
                <div class="stu_sec_left">
                   <ul class="nav nav-tabs">
-                     <button class="tog_btn"><i  class="fa fa-cog" style="position: absolute;right: 0;color: #fff;font-size: 24px;cursor: pointer;"></i></button>
+                  
                      <li class="dash-ico nav-link active"><a  data-toggle="tab" href="#UReg_tab">User Registration</a><i  class="fa fa-caret-down"></i></li>
                      <li class="hist-ico nav-link"><a data-toggle="tab" href="#history_tab">Create School</a><i  class="fa fa-caret-down"></i></li>
                      <li class="exam-ico nav-link"><a data-toggle="tab" href="#exam_tab">Start Exam</a><i  class="fa fa-caret-down"></i></li>
@@ -61,8 +72,9 @@
                </div>
             </div>
             <div class="right_wrap1 col-lg-8 col-md-8 col-sm-8 col-xs-8 pull-right">
-               <h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">User Registration</h2>
+               
                <div class="tab-content">
+                  <h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">User Registration</h2>
                   <div id="UReg_tab" class="tab-pane fade in active">
                      
                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -103,7 +115,7 @@
                               <textarea rows="3" cols="12" class="col-lg-6 col-md-6 col-sm-12 col-xs-12"></textarea>
                            </div>
                            <div class="col-md-12">
-                              <button class="signin-btn">Sign In</button>
+                              <button class="signin-btn">Submit</button>
                            </div>
                         </div>
                      </div>
@@ -132,10 +144,24 @@
 
       <!-- SCRIPTS -->
       <script type="text/javascript">
-         $(".tog_btn").click(function(){
+         $(".slide-toggle").click(function(){
          $(".top_con").toggleClass("minimise_Con");
          });
       </script>
+
+      <script type="text/javascript">
+    $(document).ready(function(){
+        $(".slide-toggle").click(function(){
+            $(".left_wrap1").animate({
+                width: "toggle"
+            });
+             $(".right_wrap1").animate({
+                width: "toggle"
+            });
+        });
+    });
+</script>
+
       <script src="js/jquery.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <script src="js/jquery.stellar.min.js"></script>
