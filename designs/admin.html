@@ -7,7 +7,7 @@
       <meta name="description" content="">
       <meta name="keywords" content="">
       <meta name="author" content="">
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="css/bootstrap.min.css">
       <link rel="stylesheet" href="css/magnific-popup.css">
       <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -22,16 +22,14 @@
       <header class="stu_header">
          <div class="container">
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                <button class="slide-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                         <span class="icon icon-bar"></span>
-                         <span class="icon icon-bar"></span>
-                         <span class="icon icon-bar"></span>
-                    </button>
+               <button class="slide-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+               <span class="icon icon-bar"></span>
+               <span class="icon icon-bar"></span>
+               <span class="icon icon-bar"></span>
+               </button>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">   
-              
-              
-                     <img src="images/logo.png">
+               <img src="images/logo.png">
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 pull-right">
                <span class="stuhead_wel_txt col-lg-5 col-md-5 col-sm-5 col-xs-5">Welcome</span> 
@@ -54,29 +52,25 @@
          </div>
       </header>
       <!-- Header ends -->
-
       <!-- Center Container -->
       <section class="stu_mid_sec">
          <img class="bg_img" src="images/dashbaord_bg2.jpg">
          <div class="top_con admin_container">
-            
             <div class="left_wrap1 col-lg-3 col-md-3 col-sm-3 col-xs-3">
                <div class="stu_sec_left">
                   <ul class="nav nav-tabs">
-                  
                      <li class="dash-ico nav-link active"><a  data-toggle="tab" href="#UReg_tab">User Registration</a><i  class="fa fa-caret-down"></i></li>
-                     <li class="hist-ico nav-link"><a data-toggle="tab" href="#history_tab">Create School</a><i  class="fa fa-caret-down"></i></li>
-                     <li class="exam-ico nav-link"><a data-toggle="tab" href="#exam_tab">Start Exam</a><i  class="fa fa-caret-down"></i></li>
-                     <li class="repo-ico nav-link"><a data-toggle="tab" href="#reports_tab">Reports</a><i  class="fa fa-caret-down"></i></li>
+                     <li class="hist-ico nav-link"><a data-toggle="tab" href="#Edit_tab">Edit User</a><i  class="fa fa-caret-down"></i></li>
+                     <li class="exam-ico nav-link"><a data-toggle="tab" href="#CreIns_tab">Create Institute</a><i  class="fa fa-caret-down"></i></li>
+                     <li class="repo-ico nav-link"><a data-toggle="tab" href="#CreSchool_tab">Create School</a><i  class="fa fa-caret-down"></i></li>
                   </ul>
                </div>
             </div>
             <div class="right_wrap1 col-lg-8 col-md-8 col-sm-8 col-xs-8 pull-right">
-               
                <div class="tab-content">
-                  <h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">User Registration</h2>
+                  
                   <div id="UReg_tab" class="tab-pane fade in active">
-                     
+                     <h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">User Registration</h2>
                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="adm_inputs_wrap">
                            <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">User Name *</label>
@@ -110,6 +104,7 @@
                                  </select>
                               </div>
                            </div>
+                            </div>
                            <div class="adm_inputs_wrap">
                               <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Address</label>
                               <textarea rows="3" cols="12" class="col-lg-6 col-md-6 col-sm-12 col-xs-12"></textarea>
@@ -117,51 +112,132 @@
                            <div class="col-md-12">
                               <button class="signin-btn">Submit</button>
                            </div>
-                        </div>
+                       
                      </div>
                   </div>
-                  <div id="history_tab" class="tab-pane fade">
-                     <h3>Create School</h3>
-                     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <div id="Edit_tab" class="tab-pane fade">
+                     <h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Edit User</h2>
+                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="adm_inputs_wrap">
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">User Name *</label>
+                           <input class="col-lg-6 col-md-6 col-sm-12 col-xs-12" type="text" class="input-fields form-control" placeholder="User Name" id="Username" name="Username" readonly>
+                        </div>
+                        <div class="adm_inputs_wrap">
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">User Password</label>
+                           <input class="col-lg-6 col-md-6 col-sm-12 col-xs-12" type="password" class="input-fields form-control"  id="UserPassword" name="UserPassword" >
+                        </div>
+                         <div class="adm_inputs_wrap">
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Confirm Password</label>
+                           <input class="col-lg-6 col-md-6 col-sm-12 col-xs-12" type="password" class="input-fields form-control"  id="ConfPassword" name="ConfPassword" >
+                        </div>
+                        
+                        <div class="adm_inputs_wrap">
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Phone No</label>
+                           <input class="col-lg-6 col-md-6 col-sm-12 col-xs-12" type="text" class="input-fields form-control" id="PhoneNo" name="PhoneNo" >
+                        </div>
+                       
+                           <div class="adm_inputs_wrap">
+                              <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Address</label>
+                              <textarea rows="3" cols="12" class="col-lg-6 col-md-6 col-sm-12 col-xs-12"></textarea>
+                           </div>
+                           <div class="col-md-12">
+                              <button class="signin-btn">Submit</button>
+                           </div>
+                       
+                     </div>
                   </div>
-                  <div id="exam_tab" class="tab-pane fade">
-                     <h3>Menu 2</h3>
-                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                  <div id="CreIns_tab" class="tab-pane fade">
+                     <h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Create Institute</h2>
+                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="adm_inputs_wrap">
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Institution Name</label>
+                           <input class="col-lg-6 col-md-6 col-sm-12 col-xs-12" type="text" class="input-fields form-control" placeholder="Institution Name" id="institutionName" name="institutionName">
+                        </div>
+                        <div class="adm_inputs_wrap">
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Institution Code</label>
+                           <input class="col-lg-6 col-md-6 col-sm-12 col-xs-12" type="text" class="input-fields form-control" placeholder="Institution Code" id="InstitutionCode" name="InstitutionCode" >
+                        </div>
+                        <div class="col-md-12">
+                              <button class="signin-btn">Submit</button>
+                           </div>
+                     </div>
                   </div>
-                  <div id="reports_tab" class="tab-pane fade">
-                     <h3>Menu 3</h3>
-                     <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                  <div id="CreSchool_tab" class="tab-pane fade">
+                     <h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Create School</h2>
+                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="adm_inputs_wrap">
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">School Name</label>
+                           <input class="col-lg-6 col-md-6 col-sm-12 col-xs-12" type="text" class="input-fields form-control" placeholder="School Name" id="SchoolName" name="SchoolName">
+                        </div>
+                        <div class="adm_inputs_wrap">
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">School Code</label>
+                           <input class="col-lg-6 col-md-6 col-sm-12 col-xs-12" type="text" class="input-fields form-control" placeholder="School Code" id="SchoolCode" name="SchoolCode" >
+                        </div>
+                        <div class="adm_inputs_wrap">
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">District</label>
+                           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 drop_down">
+                              <div class="form-group">
+                                 <select class="dropdown form-control" id="sel1">
+                                    <option>Nellore</option>
+                                    <option>Kadapa</option>
+                                    <option>Kurnool</option>
+                                    <option>Anantapur</option>
+                                 </select>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="adm_inputs_wrap">
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">State</label>
+                           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 drop_down">
+                              <div class="form-group">
+                                 <select class="dropdown form-control" id="sel1">
+                                    <option>Andhra Pradesh</option>
+                                    <option>Telangana</option>
+                                    <option>Tamilnadu</option>
+                                    <option>Karnataka</option>
+                                 </select>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="adm_inputs_wrap adm_checkbox">
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Class</label>
+                           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 drop_down">
+                              <label class="checkbox-inline"><input type="checkbox" value="">6 <sup>th</sup> Class</label>
+<label class="checkbox-inline"><input type="checkbox" value="">7 <sup>th</sup> Class</label>
+<label class="checkbox-inline"><input type="checkbox" value="">8 <sup>th</sup> Class</label>
+                           </div>
+                        </div>
+                        <div class="col-md-12">
+                              <button class="signin-btn">Submit</button>
+                           </div>
+                     </div>
                   </div>
                </div>
             </div>
          </div>
       </section>
       <!-- Center Container ends-->
-
       <footer class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
          <p>Copyright © 2018</p>
       </footer>
-
       <!-- SCRIPTS -->
       <script type="text/javascript">
          $(".slide-toggle").click(function(){
          $(".top_con").toggleClass("minimise_Con");
          });
       </script>
-
       <script type="text/javascript">
-    $(document).ready(function(){
-        $(".slide-toggle").click(function(){
-            $(".left_wrap1").animate({
-                width: "toggle"
-            });
-             $(".right_wrap1").animate({
-                width: "toggle"
-            });
-        });
-    });
-</script>
-
+         $(document).ready(function(){
+             $(".slide-toggle").click(function(){
+                 $(".left_wrap1").animate({
+                     width: "toggle"
+                 });
+                  $(".right_wrap1").animate({
+                     width: "toggle"
+                 });
+             });
+         });
+      </script>
       <script src="js/jquery.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <script src="js/jquery.stellar.min.js"></script>
