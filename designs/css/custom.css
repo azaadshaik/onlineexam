@@ -111,7 +111,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#195fbf', end
     border-bottom: 1px solid #215dba;
     color: #215dba;}
     .dropdown .dropdown-menu .dropdown-item:hover{background:#215dba;color: #ffffff; }
-    .right_wrap1 .tab-content textarea{    color: #ffffff;
+    .right_wrap1 .tab-content textarea{    color:#0078ff;
     border: none;
     outline: none;
     padding: 10px 20px;
