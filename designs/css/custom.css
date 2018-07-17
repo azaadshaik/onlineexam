@@ -207,7 +207,7 @@ body {
   /*background:rgba(0,0,0,0.3);*/
   width: 100%;
   height: 835px;
-  padding: 80px 25px;
+  padding:40px 25px;
 }
 
 .stu_sec_right {
@@ -313,7 +313,6 @@ body {
   display: inline-block;
   width: 100%;
   text-align: left;
-  margin-top: 70px;
   margin-bottom: 20px;
 }
 
@@ -324,8 +323,11 @@ body {
   font-weight: 300;
   text-align: left;
   line-height: 42px;
+  margin: 0;
 }
-
+.adm_checkbox .stu_inn_checker .checkbox-inline{width:20%;}
+.adm_checkbox .stu_inn_checker {padding:20px 50px;
+    background: rgba(0,0,0,0.3);border-radius: 60px;-moz-border-radius: 60px;-webkit-border-radius: 60px;}
 .right_wrap1 .tab-content .adm_inputs_wrap .text_filed {
   width: 100%;
 }

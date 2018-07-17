@@ -64,11 +64,13 @@
                      <li class="hist-ico nav-link"><a data-toggle="tab" href="#Edit_tab">Edit User</a><i  class="fa fa-caret-down" style="display: none;"></i></li>
                      <li class="exam-ico nav-link"><a data-toggle="tab" href="#CreIns_tab">Create Institute</a><i  class="fa fa-caret-down" style="display: none;"></i></li>
                      <li class="repo-ico nav-link"><a data-toggle="tab" href="#CreSchool_tab">Create School</a><i  class="fa fa-caret-down" style="display: none;"></i></li>
+                     <li class="repo-ico nav-link"><a data-toggle="tab" href="#MapClass_School">Map Class to School</a><i  class="fa fa-caret-down" style="display: none;"></i></li>
                   </ul>
                </div>
             </div>
             <div class="right_wrap1 col-lg-8 col-md-8 col-sm-8 col-xs-8 pull-right">
                <div class="tab-content">
+                  <!-- User Registration starts here -->
                   <div id="UReg_tab" class="tab-pane fade in active">
                      <h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">User Registration</h2>
                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -117,7 +119,7 @@
                         <div class="adm_inputs_wrap adm_checkbox">
                            <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Status</label>
                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 drop_down">
-                              <label class="checkbox-inline"><input type="checkbox" value="">Active</label>
+                              <label class="checkbox-inline"><input type="checkbox" checked="checked" value="">Active</label>
                               <label class="checkbox-inline"><input type="checkbox" value="">In Active</label>
                            </div>
                         </div>
@@ -126,6 +128,7 @@
                         </div>
                      </div>
                   </div>
+                  <!-- Edit User starts here -->
                   <div id="Edit_tab" class="tab-pane fade">
                      <h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Edit User</h2>
                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -154,6 +157,7 @@
                         </div>
                      </div>
                   </div>
+                  <!-- Create Institute starts here -->
                   <div id="CreIns_tab" class="tab-pane fade">
                      <h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Create Institute</h2>
                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -175,6 +179,7 @@
                         </div>
                      </div>
                   </div>
+                  <!-- Create School starts here -->
                   <div id="CreSchool_tab" class="tab-pane fade">
                      <h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Create School</h2>
                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -185,6 +190,19 @@
                         <div class="adm_inputs_wrap">
                            <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">School Code</label>
                            <input class="col-lg-6 col-md-6 col-sm-12 col-xs-12" type="text" class="input-fields form-control" placeholder="School Code" id="SchoolCode" name="SchoolCode" >
+                        </div>
+                        <div class="adm_inputs_wrap">
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Institute</label>
+                           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 drop_down">
+                              <div class="form-group">
+                                 <select class="dropdown form-control" id="sel1">
+                                    <option>Nalanda</option>
+                                    <option>Google</option>
+                                    <option>Bhashyam</option>
+                                    <option>RSR</option>
+                                 </select>
+                              </div>
+                           </div>
                         </div>
                         <div class="adm_inputs_wrap">
                            <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">District</label>
@@ -212,12 +230,60 @@
                               </div>
                            </div>
                         </div>
+                        <div class="adm_inputs_wrap">
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Address</label>
+                           <textarea rows="3" cols="12" class="col-lg-6 col-md-6 col-sm-12 col-xs-12"></textarea>
+                        </div>
+                        <div class="adm_inputs_wrap">
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Contact Number</label>
+                           <input class="col-lg-6 col-md-6 col-sm-12 col-xs-12" type="text" placeholder="Contact Number" id="ContactNumber" name="ContactNumber">
+                        </div>
+                        <div class="adm_inputs_wrap">
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Principal Name</label>
+                           <input class="col-lg-6 col-md-6 col-sm-12 col-xs-12" type="text" placeholder="Principal Name" id="PrincipalName" name="PrincipalName">
+                        </div>
+                        <div class="adm_inputs_wrap adm_checkbox">
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Status</label>
+                           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 drop_down">
+                              <label class="checkbox-inline"><input type="checkbox" checked="checked" value="">Active</label>
+                              <label class="checkbox-inline"><input type="checkbox" value="">In Active</label>
+                           </div>
+                        </div>
+                        <div class="col-md-12">
+                           <button class="signin-btn">Submit</button>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Map Class to School starts here -->
+                  <div id="MapClass_School" class="tab-pane fade">
+                     <h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Map Class to School</h2>
+                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="adm_inputs_wrap">
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Select School</label>
+                           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 drop_down">
+                              <div class="form-group">
+                                 <select class="dropdown form-control" id="sel1">
+                                    <option>Nalanda</option>
+                                    <option>Google</option>
+                                    <option>Bhashyam</option>
+                                    <option>RSR</option>
+                                 </select>
+                              </div>
+                           </div>
+                        </div>
                         <div class="adm_inputs_wrap adm_checkbox">
                            <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Class</label>
                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 drop_down">
-                              <label class="checkbox-inline"><input type="checkbox" value="">6 <sup>th</sup> Class</label>
+                              <label class="checkbox-inline"><input type="checkbox" checked value="">6 <sup>th</sup> Class</label>
+                              <div class="stu_inn_checker"><label class="checkbox-inline"><input type="checkbox" value="">A</label>
+                                 <label class="checkbox-inline"><input type="checkbox" value="">B</label>
+                                 <label class="checkbox-inline"><input type="checkbox" value="">C</label>
+                                 <label class="checkbox-inline"><input type="checkbox" value="">D</label>
+                              </div>
                               <label class="checkbox-inline"><input type="checkbox" value="">7 <sup>th</sup> Class</label>
                               <label class="checkbox-inline"><input type="checkbox" value="">8 <sup>th</sup> Class</label>
+                              <label class="checkbox-inline"><input type="checkbox" value="">9 <sup>th</sup> Class</label>
+                              <label class="checkbox-inline"><input type="checkbox" value="">10 <sup>th</sup> Class</label>
                            </div>
                         </div>
                         <div class="col-md-12">
