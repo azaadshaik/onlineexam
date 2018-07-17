@@ -325,6 +325,17 @@ body {
   line-height: 42px;
   margin: 0;
 }
+.custom-file-upload input[type="file"] {
+    display: none;
+}
+.custom-file-upload .custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+.custom-table{    margin: 50px 0;}
+.custom-table table th,.custom-table table td{text-align: left;color: #ffffff;}
 .adm_checkbox .stu_inn_checker .checkbox-inline{width:20%;}
 .adm_checkbox .stu_inn_checker {padding:20px 50px;
     background: rgba(0,0,0,0.3);border-radius: 60px;-moz-border-radius: 60px;-webkit-border-radius: 60px;}

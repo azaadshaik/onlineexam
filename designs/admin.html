@@ -60,12 +60,16 @@
                <div class="stu_sec_left">
                   <div class="bg-layer"></div>
                   <ul class="nav nav-tabs">
-                     <li class="dash-ico nav-link active"><a  data-toggle="tab" href="#UReg_tab">User Registration</a><i  class="fa fa-caret-down" style="display: none;"></i></li>
-                     <li class="hist-ico nav-link"><a data-toggle="tab" href="#Edit_tab">Edit User</a><i  class="fa fa-caret-down" style="display: none;"></i></li>
-                     <li class="exam-ico nav-link"><a data-toggle="tab" href="#CreIns_tab">Create Institute</a><i  class="fa fa-caret-down" style="display: none;"></i></li>
-                     <li class="repo-ico nav-link"><a data-toggle="tab" href="#CreSchool_tab">Create School</a><i  class="fa fa-caret-down" style="display: none;"></i></li>
-                     <li class="repo-ico nav-link"><a data-toggle="tab" href="#MapClass_School">Map Class to School</a><i  class="fa fa-caret-down" style="display: none;"></i></li>
-                  </ul>
+                  <li class="dash-ico nav-link active"><a  data-toggle="tab" href="#UReg_tab">User Registration</a><i  class="fa fa-caret-down" style="display: none;"></i></li>
+                  <li class="hist-ico nav-link"><a data-toggle="tab" href="#Edit_tab">Edit User</a><i  class="fa fa-caret-down" style="display: none;"></i></li>
+                  <li class="exam-ico nav-link"><a data-toggle="tab" href="#CreIns_tab">Create Institute</a><i  class="fa fa-caret-down" style="display: none;"></i></li>
+                  <li class="repo-ico nav-link"><a data-toggle="tab" href="#CreSchool_tab">Create School</a><i  class="fa fa-caret-down" style="display: none;"></i></li>
+                  <li class="repo-ico nav-link"><a data-toggle="tab" href="#MapClass_School">Map Class to School</a><i  class="fa fa-caret-down" style="display: none;"></i></li>
+                  <li class="repo-ico nav-link"><a data-toggle="tab" href="#MapStu_Class">Map Students to Class</a><i  class="fa fa-caret-down" style="display: none;"></i></li>
+                  <li class="repo-ico nav-link"><a data-toggle="tab" href="#CreateSub_tab">Create Subject</a><i  class="fa fa-caret-down" style="display: none;"></i></li>
+                  <li class="repo-ico nav-link"><a data-toggle="tab" href="#CreateTopic_tab">Create Topic</a><i  class="fa fa-caret-down" style="display: none;"></i></li>
+                  <li class="repo-ico nav-link"><a data-toggle="tab" href="#UploadTopic_tab">Upload Topic</a><i  class="fa fa-caret-down" style="display: none;"></i></li>
+                  <li class="repo-ico nav-link"><a data-toggle="tab" href="#Upload_Questions">Upload Questions</a><i  class="fa fa-caret-down" style="display: none;"></i></li>
                </div>
             </div>
             <div class="right_wrap1 col-lg-8 col-md-8 col-sm-8 col-xs-8 pull-right">
@@ -291,8 +295,207 @@
                         </div>
                      </div>
                   </div>
+                  <!-- Map Class to School starts here -->
+                  <div id="MapStu_Class" class="tab-pane fade">
+                     <h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Map Students to Class</h2>
+                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="adm_inputs_wrap">
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Select School</label>
+                           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 drop_down">
+                              <div class="form-group">
+                                 <select class="dropdown form-control" id="sel1">
+                                    <option>Nalanda</option>
+                                    <option>Google</option>
+                                    <option>Bhashyam</option>
+                                    <option>RSR</option>
+                                 </select>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="adm_inputs_wrap">
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Select Class</label>
+                           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 drop_down">
+                              <div class="form-group">
+                                 <select class="dropdown form-control" id="sel1">
+                                    <option>6<sup>th</sup> Class</option>
+                                    <option>7<sup>th</sup> Class</option>
+                                    <option>8<sup>th</sup> Class</option>
+                                    <option>9<sup>th</sup> Class</option>
+                                    <option>10<sup>th</sup> Class</option>
+                                 </select>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="adm_inputs_wrap">
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Select Section</label>
+                           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 drop_down">
+                              <div class="form-group">
+                                 <select class="dropdown form-control" id="sel1">
+                                    <option>A</option>
+                                    <option>B</option>
+                                    <option>C</option>
+                                    <option>D</option>
+                                    <option>E</option>
+                                 </select>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-12">
+                           <button class="signin-btn">Submit</button>
+                        </div>
+                     </div>
+                  </div>
+                  <!--Create Subject starts here -->
+                  <div id="CreateSub_tab" class="tab-pane fade">
+                     <h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Create Subject</h2>
+                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="adm_inputs_wrap">
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Subject Name</label>
+                           <input class="col-lg-6 col-md-6 col-sm-12 col-xs-12" type="text" placeholder="Subject Name" id="SubjectName" name="SubjectName">
+                        </div>
+                        <div class="adm_inputs_wrap">
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Subject Code</label>
+                           <input class="col-lg-6 col-md-6 col-sm-12 col-xs-12" type="text" placeholder="Subject Code" id="SubjectCode" name="Subject Code">
+                        </div>
+                        <div class="adm_inputs_wrap">
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Class</label>
+                           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 drop_down">
+                              <div class="form-group">
+                                 <select class="dropdown form-control" id="sel1">
+                                    <option>6th Class</option>
+                                    <option>7th Class</option>
+                                    <option>8th Class</option>
+                                    <option>9th Class</option>
+                                    <option>10th Class</option>
+                                 </select>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-12">
+                           <button class="signin-btn">Submit</button>
+                        </div>
+                     </div>
+                  </div>
+                  <!--Create Topics starts here -->
+                  <div id="CreateTopic_tab" class="tab-pane fade">
+                     <h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Create Topic</h2>
+                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="adm_inputs_wrap">
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Topic Name</label>
+                           <input class="col-lg-6 col-md-6 col-sm-12 col-xs-12" type="text" placeholder="Topic Name" id="TopicName" name="TopicName">
+                        </div>
+                        <div class="adm_inputs_wrap">
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Topic Subject</label>
+                           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 drop_down">
+                              <div class="form-group">
+                                 <select class="dropdown form-control" id="sel1">
+                                    <option>Multiplication and Division of Integers</option>
+                                    <option>Properties of Integers</option>
+                                    <option>Properties of multiplication of integers</option>
+                                    <option>Word problems including integers</option>
+                                    <option>Triangles</option>
+                                 </select>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="adm_inputs_wrap">
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Topic Code</label>
+                           <input class="col-lg-6 col-md-6 col-sm-12 col-xs-12" type="text" placeholder="Topic Code" id="TopicCode" name="TopicCode">
+                        </div>
+                        <div class="col-md-12">
+                           <button class="signin-btn">Submit</button>
+                        </div>
+                     </div>
+                  </div>
+                  <!--Upload Topics starts here -->
+                  <div id="UploadTopic_tab" class="tab-pane fade">
+                     <h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Upload Topics</h2>
+                     <div class="adm_inputs_wrap">
+                        <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Select Subject</label>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 drop_down">
+                           <div class="form-group">
+                              <select class="dropdown form-control" id="sel1">
+                                 <option>Multiplication and Division of Integers</option>
+                                 <option>Properties of Integers</option>
+                                 <option>Properties of multiplication of integers</option>
+                                 <option>Word problems including integers</option>
+                                 <option>Triangles</option>
+                              </select>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="custom-file-upload">
+                        <label for="file-upload" class="custom-file-upload">
+                        <i class="fa fa-cloud-upload"></i> Upload Topic
+                        </label>
+                        <input id="file-upload" type="file"/>
+                     </div>
+                     <div class="col-md-12">
+                        <button class="signin-btn">Submit</button>
+                     </div>
+                    
+                  </div>
+                  <!--Upload Questions starts here -->
+                  <div id="Upload_Questions" class="tab-pane fade">
+                     <h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Upload Questions</h2>
+                      <div class="adm_inputs_wrap">
+                        <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Select Class</label>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 drop_down">
+                           <div class="form-group">
+                              <select class="dropdown form-control" id="sel1">
+                                 <option>6<sup>th</sup>Class</option>
+                                 <option>7<sup>th</sup>Class</option>
+                                  <option>8<sup>th</sup>Class</option>
+                                   <option>9<sup>th</sup>Class</option>
+                                    <option>10<sup>th</sup>Class</option>
+                              </select>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="adm_inputs_wrap">
+                        <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Select Subject</label>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 drop_down">
+                           <div class="form-group">
+                              <select class="dropdown form-control" id="sel1">
+                                 <option>English</option>
+                                 <option>Hindi</option>
+                                 <option>Maths</option>
+                                 <option>Science</option>
+                                 <option>Social</option>
+                                 
+                              </select>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="adm_inputs_wrap">
+                        <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Select Topic</label>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 drop_down">
+                           <div class="form-group">
+                              <select class="dropdown form-control" id="sel1">
+                                 <option>Multiplication and Division of Integers</option>
+                                 <option>Properties of Integers</option>
+                                 <option>Properties of multiplication of integers</option>
+                                 <option>Word problems including integers</option>
+                                 <option>Triangles</option>
+                              </select>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="custom-file-upload">
+                        <label for="file-upload" class="custom-file-upload">
+                        <i class="fa fa-cloud-upload"></i> Upload Topic
+                        </label>
+                        <input id="file-upload" type="file"/>
+                     </div>
+                     <div class="col-md-12">
+                        <button class="signin-btn">Submit</button>
+                     </div>
+                    
+                  </div>
                </div>
             </div>
+         </div>
          </div>
       </section>
       <!-- Center Container ends-->
