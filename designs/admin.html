@@ -18,6 +18,8 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
    </head>
    <body>
+
+      <img class="bg_img" src="images/dashbaord_bg2.jpg">
       <!-- Header -->
       <header class="stu_header">
          <div class="container">
@@ -54,15 +56,17 @@
       <!-- Header ends -->
       <!-- Center Container -->
       <section class="stu_mid_sec">
-         <img class="bg_img" src="images/dashbaord_bg2.jpg">
+         
          <div class="top_con admin_container">
+            
             <div class="left_wrap1 col-lg-3 col-md-3 col-sm-3 col-xs-3">
                <div class="stu_sec_left">
+                  <div class="bg-layer"></div>
                   <ul class="nav nav-tabs">
-                     <li class="dash-ico nav-link active"><a  data-toggle="tab" href="#UReg_tab">User Registration</a><i  class="fa fa-caret-down"></i></li>
-                     <li class="hist-ico nav-link"><a data-toggle="tab" href="#Edit_tab">Edit User</a><i  class="fa fa-caret-down"></i></li>
-                     <li class="exam-ico nav-link"><a data-toggle="tab" href="#CreIns_tab">Create Institute</a><i  class="fa fa-caret-down"></i></li>
-                     <li class="repo-ico nav-link"><a data-toggle="tab" href="#CreSchool_tab">Create School</a><i  class="fa fa-caret-down"></i></li>
+                     <li class="dash-ico nav-link active"><a  data-toggle="tab" href="#UReg_tab">User Registration</a><i  class="fa fa-caret-down" style="display: none;"></i></li>
+                     <li class="hist-ico nav-link"><a data-toggle="tab" href="#Edit_tab">Edit User</a><i  class="fa fa-caret-down" style="display: none;"></i></li>
+                     <li class="exam-ico nav-link"><a data-toggle="tab" href="#CreIns_tab">Create Institute</a><i  class="fa fa-caret-down" style="display: none;"></i></li>
+                     <li class="repo-ico nav-link"><a data-toggle="tab" href="#CreSchool_tab">Create School</a><i  class="fa fa-caret-down" style="display: none;"></i></li>
                   </ul>
                </div>
             </div>
@@ -73,8 +77,12 @@
                      <h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">User Registration</h2>
                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="adm_inputs_wrap">
-                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">User Name *</label>
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">User Name <span class="mandatory">*</span></label>
                            <input class="col-lg-6 col-md-6 col-sm-12 col-xs-12" type="text" class="input-fields form-control" placeholder="User Name" id="Username" name="Username" required="">
+                        </div>
+                        <div class="adm_inputs_wrap">
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Conform Password</label>
+                           <input class="col-lg-6 col-md-6 col-sm-12 col-xs-12" type="text" class="input-fields form-control" placeholder="Your Password" id="Con_Pwd" name="Con_Pwd" required="">
                         </div>
                         <div class="adm_inputs_wrap">
                            <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">User Email</label>
@@ -97,10 +105,11 @@
                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 drop_down">
                               <div class="form-group">
                                  <select class="dropdown form-control" id="sel1">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
+                                    <option>Admin</option>
+                                    <option>Manager</option>
+                                    <option>Question Preparation</option>
+                                    <option>Student</option>
+                                    <option>Parent</option>
                                  </select>
                               </div>
                            </div>
@@ -109,6 +118,14 @@
                               <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Address</label>
                               <textarea rows="3" cols="12" class="col-lg-6 col-md-6 col-sm-12 col-xs-12"></textarea>
                            </div>
+                           <div class="adm_inputs_wrap adm_checkbox">
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Status</label>
+                           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 drop_down">
+                              <label class="checkbox-inline"><input type="checkbox" value="">Active</label>
+<label class="checkbox-inline"><input type="checkbox" value="">In Active</label>
+
+                           </div>
+                        </div>
                            <div class="col-md-12">
                               <button class="signin-btn">Submit</button>
                            </div>
@@ -156,6 +173,11 @@
                         <div class="adm_inputs_wrap">
                            <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Institution Code</label>
                            <input class="col-lg-6 col-md-6 col-sm-12 col-xs-12" type="text" class="input-fields form-control" placeholder="Institution Code" id="InstitutionCode" name="InstitutionCode" >
+                        </div>
+                        <div class="adm_inputs_wrap">
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Registration Number</label>
+                           <input class="col-lg-6 col-md-6 col-sm-12 col-xs-12" type="text" class="input-fields form-control" placeholder="Registration Number" id="Reg_Number" name="Reg_Number" >
+                           <span class="Option_cls">(Optional)</span>
                         </div>
                         <div class="col-md-12">
                               <button class="signin-btn">Submit</button>
