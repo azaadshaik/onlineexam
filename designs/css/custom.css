@@ -1,6 +1,6 @@
 body {
   font-family: Oswald !important;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .Signin-sec {
@@ -56,12 +56,12 @@ body {
 }
 
 .signin-btn {
-  background: #0067ce;
+  background: #f3db14;
   padding: 15px 70px;
   margin-top: 25px;
   border: none;
   outline: none;
-  color: #ffffff;
+  color: #000000;
   border-radius: 35px;
   -moz-border-radius: 35px;
   -webkit-border-radius: 35px;
@@ -74,20 +74,20 @@ body {
 .bg-cls,
 .signin-btn:hover {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#195fbf+0,1071dd+100 */
-  background: #195fbf;
+  background: #f3db14;
   /* Old browsers */
-  background: -moz-linear-gradient(left, #195fbf 0%, #1071dd 100%);
+  background: -moz-linear-gradient(left, #f3db14 0%, #ebb511 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, #195fbf 0%, #1071dd 100%);
+  background: -webkit-linear-gradient(left, #f3db14 0%, #ebb511 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, #195fbf 0%, #1071dd 100%);
+  background: linear-gradient(to right, #f3db14 0%, #ebb511 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#195fbf', endColorstr='#1071dd', GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3db14', endColorstr='#ebb511', GradientType=1);
   /* IE6-9 */
 }
 
 .signin-btn:active {
-  background: #8b52e8;
+  background: #ebb511;
 }
 
 .footer-copyright {
@@ -220,12 +220,13 @@ body {
 .stu_sec_left .nav-link {
   padding: 10px 0;
   background: none;
-  margin-left: 60px;
+  margin-left: 45px;
   display: inline-block;
-  font-size: 20px;
+  font-size:18px;
   color: #ffffff;
   text-align: left;
   font-weight: 500;
+  width: 100%;
 }
 
 .stu_sec_left .nav-link a,
@@ -241,13 +242,13 @@ body {
 }
 
 .stu_sec_left .nav-link a:hover {
-  margin-left: 2px;
+ color: #f3db14 !important;
 }
 
 .stu_sec_left .nav-link.active a {
   background: none;
-  font-weight: 700;
-  color: #ffffff !important;
+  letter-spacing:1px;
+  color: #f3db14  !important;
 }
 
 .left_wrap1 {
@@ -307,7 +308,7 @@ body {
 }
 
 .right_wrap1 h2 {
-  color: #ffffff;
+  color: #f3db14 ;
   font-size: 30px;
   padding: 0 27px;
   display: inline-block;
@@ -322,13 +323,14 @@ body {
   display: inline-block;
   font-weight: 300;
   text-align: left;
-  line-height: 42px;
-  margin: 0;
+     line-height: 30px;
+    margin: 15px 0;
 }
+.custom-file-upload{display:inline-block;width: 100%;    margin: 10px 0;}
 .custom-file-upload input[type="file"] {
     display: none;
 }
-.custom-file-upload .custom-file-upload {
+.custom-file-upload .custom-file-upload-label {
     border: 1px solid #ccc;
     display: inline-block;
     padding: 6px 12px;
@@ -349,9 +351,9 @@ body {
   padding: 5px;
 }
 
-.right_wrap1 .tab-content .adm_inputs_wrap input,
+input,.right_wrap1 .tab-content .adm_inputs_wrap input,
 .right_wrap1 .tab-content .adm_inputs_wrap .text_filed {
-  color: #0078ff;
+  color: #e6af08;
   border: none;
   outline: none;
   padding: 10px 20px;
@@ -360,7 +362,13 @@ body {
   -moz-border-radius: 25px;
   -webkit-border-radius: 25px;
 }
-
+.padding0{padding: 0;}
+.seperator{    display: inline-block;
+    width:60px;
+    float: left;
+    line-height: 69px;
+    color: #ffffff;}
+    .options-wrap input{margin-top: 10px;}
 .adm_inputs_wrap {
   display: inline-block;
   width: 100%;

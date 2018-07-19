@@ -18,7 +18,8 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
    </head>
    <body>
-      <img class="bg_img" src="images/dashbaord_bg2.jpg">
+      <img class="bg_img" src="images/dashbaord_bg2.png">
+
       <!-- Header -->
       <header class="stu_header">
          <div class="container">
@@ -70,8 +71,11 @@
                   <li class="repo-ico nav-link"><a data-toggle="tab" href="#CreateTopic_tab">Create Topic</a><i  class="fa fa-caret-down" style="display: none;"></i></li>
                   <li class="repo-ico nav-link"><a data-toggle="tab" href="#UploadTopic_tab">Upload Topic</a><i  class="fa fa-caret-down" style="display: none;"></i></li>
                   <li class="repo-ico nav-link"><a data-toggle="tab" href="#Upload_Questions">Upload Questions</a><i  class="fa fa-caret-down" style="display: none;"></i></li>
+                   <li class="repo-ico nav-link"><a data-toggle="tab" href="#Image_Questions">Create Image Questions</a><i  class="fa fa-caret-down" style="display: none;"></i></li>
                </div>
             </div>
+
+            
             <div class="right_wrap1 col-lg-8 col-md-8 col-sm-8 col-xs-8 pull-right">
                <div class="tab-content">
                   <!-- User Registration starts here -->
@@ -425,7 +429,7 @@
                         </div>
                      </div>
                      <div class="custom-file-upload">
-                        <label for="file-upload" class="custom-file-upload">
+                        <label for="file-upload" class="custom-file-upload-label">
                         <i class="fa fa-cloud-upload"></i> Upload Topic
                         </label>
                         <input id="file-upload" type="file"/>
@@ -483,11 +487,139 @@
                      </div>
 
                      <div class="custom-file-upload">
-                        <label for="file-upload" class="custom-file-upload">
+                        <label for="file-upload" class="custom-file-upload-label">
                         <i class="fa fa-cloud-upload"></i> Upload Topic
                         </label>
                         <input id="file-upload" type="file"/>
                      </div>
+                     <div class="col-md-12">
+                        <button class="signin-btn">Submit</button>
+                     </div>
+                    
+                  </div>
+
+                   <!--Image Questions starts here -->
+                  <div id="Image_Questions" class="tab-pane fade">
+                     <h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Upload Image Questions</h2>
+                      <div class="adm_inputs_wrap">
+                        <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Select Class</label>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 drop_down">
+                           <div class="form-group">
+                              <select class="dropdown form-control" id="sel1">
+                                 <option>6<sup>th</sup>Class</option>
+                                 <option>7<sup>th</sup>Class</option>
+                                  <option>8<sup>th</sup>Class</option>
+                                   <option>9<sup>th</sup>Class</option>
+                                    <option>10<sup>th</sup>Class</option>
+                              </select>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="adm_inputs_wrap">
+                        <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Select Subject</label>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 drop_down">
+                           <div class="form-group">
+                              <select class="dropdown form-control" id="sel1">
+                                 <option>English</option>
+                                 <option>Hindi</option>
+                                 <option>Maths</option>
+                                 <option>Science</option>
+                                 <option>Social</option>
+                                 
+                              </select>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="adm_inputs_wrap">
+                        <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Select Topic</label>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 drop_down">
+                           <div class="form-group">
+                              <select class="dropdown form-control" id="sel1">
+                                 <option>Multiplication and Division of Integers</option>
+                                 <option>Properties of Integers</option>
+                                 <option>Properties of multiplication of integers</option>
+                                 <option>Word problems including integers</option>
+                                 <option>Triangles</option>
+                              </select>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="adm_inputs_wrap">
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Question Text</label>
+                           <textarea rows="2" cols="12" class="col-lg-6 col-md-6 col-sm-12 col-xs-12"></textarea><span class="Option_cls">(Optional)</span>
+                        </div>
+
+                     <div class="custom-file-upload">
+                        <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Question Image</label>
+                           
+                           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <label for="file-upload" class="custom-file-upload-label">
+                        <i class="fa fa-cloud-upload"></i> Upload Image
+                        </label>
+                        <input id="file-upload" type="file"/>
+                        </div>
+                     </div>
+                      <div class="custom-file-upload options-wrap">
+                        <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Option1</label>
+                           
+                           <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 padding0">
+                        <label for="file-upload" class="custom-file-upload-label">
+                        <i class="fa fa-cloud-upload"></i> Upload Image
+                        </label>
+                        <input id="file-upload" type="file"/>
+                        </div> <span class="seperator">Or</span>
+                        <input class="col-lg-3 col-md-3 col-sm-12 col-xs-12" type="text" placeholder="Text" id="TopicCode" name="TopicCode">
+                     </div>
+                     <div class="custom-file-upload options-wrap">
+                        <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Option2</label>
+                           
+                           <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 padding0">
+                        <label for="file-upload" class="custom-file-upload-label">
+                        <i class="fa fa-cloud-upload"></i> Upload Image
+                        </label>
+                        <input id="file-upload" type="file"/>
+                        </div> <span class="seperator">Or</span>
+                        <input class="col-lg-3 col-md-3 col-sm-12 col-xs-12" type="text" placeholder="Text" id="TopicCode" name="TopicCode">
+                     </div>
+                     <div class="custom-file-upload options-wrap">
+                        <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Option3</label>
+                           
+                           <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 padding0">
+                        <label for="file-upload" class="custom-file-upload-label">
+                        <i class="fa fa-cloud-upload"></i> Upload Image
+                        </label>
+                        <input id="file-upload" type="file"/>
+                        </div> <span class="seperator">Or</span>
+                        <input class="col-lg-3 col-md-3 col-sm-12 col-xs-12" type="text" placeholder="Text" id="TopicCode" name="TopicCode">
+                     </div>
+                     <div class="custom-file-upload options-wrap">
+                        <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Option4</label>
+                           
+                           <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 padding0">
+                        <label for="file-upload" class="custom-file-upload-label">
+                        <i class="fa fa-cloud-upload"></i> Upload Image
+                        </label>
+                        <input id="file-upload" type="file"/>
+                        </div> <span class="seperator">Or</span>
+                        <input class="col-lg-3 col-md-3 col-sm-12 col-xs-12" type="text" placeholder="Text" id="TopicCode" name="TopicCode">
+                     </div>
+                     <div class="adm_inputs_wrap">
+                        <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Difficulty Level</label>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 drop_down">
+                           <div class="form-group">
+                              <select class="dropdown form-control" id="sel1">
+                                 <option>Easy</option>
+                                 <option>Medium</option>
+                                  <option>Hard</option>
+                                   
+                              </select>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="adm_inputs_wrap">
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Average Time</label>
+                           <input class="col-lg-6 col-md-6 col-sm-12 col-xs-12" type="text" placeholder="Number in Mins" id="AvgTime" name="AvgTime">
+                        </div>
                      <div class="col-md-12">
                         <button class="signin-btn">Submit</button>
                      </div>
