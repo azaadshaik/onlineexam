@@ -104,7 +104,8 @@ body {
   line-height: 48px;
   margin-left: -50px;
 }
-
+.Option_right{
+  margin-left:20px;}
 .input-fields::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: #8a8e9c;

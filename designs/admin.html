@@ -86,28 +86,16 @@
                            <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">User Name <span class="mandatory">*</span></label>
                            <input class="col-lg-6 col-md-6 col-sm-12 col-xs-12" type="text" class="input-fields form-control" placeholder="User Name" id="Username" name="Username" required="">
                         </div>
+                         <div class="adm_inputs_wrap">
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Password</label>
+                           <input class="col-lg-6 col-md-6 col-sm-12 col-xs-12" type="text" class="input-fields form-control" placeholder="Password" id="Password" name="Password" required="">
+                        </div>
                         <div class="adm_inputs_wrap">
                            <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Conform Password</label>
                            <input class="col-lg-6 col-md-6 col-sm-12 col-xs-12" type="text" class="input-fields form-control" placeholder="Your Password" id="Con_Pwd" name="Con_Pwd" required="">
                         </div>
                         <div class="adm_inputs_wrap">
-                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">User Email</label>
-                           <input class="col-lg-6 col-md-6 col-sm-12 col-xs-12" type="text" class="input-fields form-control" placeholder="User Email" id="Useremail" name="Useremail" >
-                        </div>
-                        <div class="adm_inputs_wrap">
-                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">First Name</label>
-                           <input class="col-lg-6 col-md-6 col-sm-12 col-xs-12" type="text" class="input-fields form-control" placeholder="First Name" id="FirstName" name="FirstName" >
-                        </div>
-                        <div class="adm_inputs_wrap">
-                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Last Name</label>
-                           <input class="col-lg-6 col-md-6 col-sm-12 col-xs-12" type="text" class="input-fields form-control" placeholder="Last Name" id="LastName" name="LastName" >
-                        </div>
-                        <div class="adm_inputs_wrap">
-                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Phone No</label>
-                           <input class="col-lg-6 col-md-6 col-sm-12 col-xs-12" type="text" class="input-fields form-control" placeholder="Phone No" id="PhoneNo" name="PhoneNo" >
-                        </div>
-                        <div class="adm_inputs_wrap">
-                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">User Role</label>
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Role</label>
                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 drop_down">
                               <div class="form-group">
                                  <select class="dropdown form-control" id="sel1">
@@ -120,6 +108,17 @@
                               </div>
                            </div>
                         </div>
+                       
+                        <div class="adm_inputs_wrap">
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">First Name</label>
+                           <input class="col-lg-6 col-md-6 col-sm-12 col-xs-12" type="text" class="input-fields form-control" placeholder="First Name" id="FirstName" name="FirstName" >
+                        </div>
+                        <div class="adm_inputs_wrap">
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Last Name</label>
+                           <input class="col-lg-6 col-md-6 col-sm-12 col-xs-12" type="text" class="input-fields form-control" placeholder="Last Name" id="LastName" name="LastName" >
+                        </div>
+                       
+                        
                         <div class="adm_inputs_wrap">
                            <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Address</label>
                            <textarea rows="3" cols="12" class="col-lg-6 col-md-6 col-sm-12 col-xs-12"></textarea>
@@ -131,6 +130,17 @@
                               <label class="checkbox-inline"><input type="checkbox" value="">In Active</label>
                            </div>
                         </div>
+                        <div class="custom-file-upload">
+                        <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">User Image</label>
+                           
+                           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <label for="file-upload" class="custom-file-upload-label">
+                        <i class="fa fa-cloud-upload"></i> Upload Image
+                        </label>
+                        <input id="file-upload" type="file">
+                        <span class="Option_cls Option_right">(Optional)</span>
+                        </div>
+                     </div>
                         <div class="col-md-12">
                            <button class="signin-btn">Submit</button>
                         </div>
@@ -178,9 +188,8 @@
                            <input class="col-lg-6 col-md-6 col-sm-12 col-xs-12" type="text" class="input-fields form-control" placeholder="Institution Code" id="InstitutionCode" name="InstitutionCode" >
                         </div>
                         <div class="adm_inputs_wrap">
-                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Registration Number</label>
-                           <input class="col-lg-6 col-md-6 col-sm-12 col-xs-12" type="text" class="input-fields form-control" placeholder="Registration Number" id="Reg_Number" name="Reg_Number" >
-                           <span class="Option_cls">(Optional)</span>
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Address</label>
+                           <textarea rows="3" cols="12" class="col-lg-6 col-md-6 col-sm-12 col-xs-12"></textarea>
                         </div>
                         <div class="col-md-12">
                            <button class="signin-btn">Submit</button>
@@ -200,7 +209,7 @@
                            <input class="col-lg-6 col-md-6 col-sm-12 col-xs-12" type="text" class="input-fields form-control" placeholder="School Code" id="SchoolCode" name="SchoolCode" >
                         </div>
                         <div class="adm_inputs_wrap">
-                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Institute</label>
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">School Institution</label>
                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 drop_down">
                               <div class="form-group">
                                  <select class="dropdown form-control" id="sel1">
@@ -212,21 +221,8 @@
                               </div>
                            </div>
                         </div>
-                        <div class="adm_inputs_wrap">
-                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">District</label>
-                           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 drop_down">
-                              <div class="form-group">
-                                 <select class="dropdown form-control" id="sel1">
-                                    <option>Nellore</option>
-                                    <option>Kadapa</option>
-                                    <option>Kurnool</option>
-                                    <option>Anantapur</option>
-                                 </select>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="adm_inputs_wrap">
-                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">State</label>
+                         <div class="adm_inputs_wrap">
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">School State</label>
                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 drop_down">
                               <div class="form-group">
                                  <select class="dropdown form-control" id="sel1">
@@ -239,7 +235,21 @@
                            </div>
                         </div>
                         <div class="adm_inputs_wrap">
-                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Address</label>
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">School District</label>
+                           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 drop_down">
+                              <div class="form-group">
+                                 <select class="dropdown form-control" id="sel1">
+                                    <option>Nellore</option>
+                                    <option>Kadapa</option>
+                                    <option>Kurnool</option>
+                                    <option>Anantapur</option>
+                                 </select>
+                              </div>
+                           </div>
+                        </div>
+                       
+                        <div class="adm_inputs_wrap">
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">School Address</label>
                            <textarea rows="3" cols="12" class="col-lg-6 col-md-6 col-sm-12 col-xs-12"></textarea>
                         </div>
                         <div class="adm_inputs_wrap">
@@ -247,11 +257,11 @@
                            <input class="col-lg-6 col-md-6 col-sm-12 col-xs-12" type="text" placeholder="Contact Number" id="ContactNumber" name="ContactNumber">
                         </div>
                         <div class="adm_inputs_wrap">
-                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Principal Name</label>
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">School Principal</label>
                            <input class="col-lg-6 col-md-6 col-sm-12 col-xs-12" type="text" placeholder="Principal Name" id="PrincipalName" name="PrincipalName">
                         </div>
                         <div class="adm_inputs_wrap adm_checkbox">
-                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Status</label>
+                           <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">School Status</label>
                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 drop_down">
                               <label class="checkbox-inline"><input type="checkbox" checked="checked" value="">Active</label>
                               <label class="checkbox-inline"><input type="checkbox" value="">In Active</label>
