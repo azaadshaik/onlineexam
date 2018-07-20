@@ -106,22 +106,22 @@ body {
 }
 .Option_right{
   margin-left:20px;}
-.input-fields::-webkit-input-placeholder {
+input::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: #8a8e9c;
 }
 
-.input-fields::-moz-placeholder {
+input::-moz-placeholder {
   /* Firefox 19+ */
   color: #8a8e9c;
 }
 
-.input-fields:-ms-input-placeholder {
+input:-ms-input-placeholder {
   /* IE 10+ */
   color: #8a8e9c;
 }
 
-.input-fields:-moz-placeholder {
+input:-moz-placeholder {
   /* Firefox 18- */
   color: #8a8e9c;
 }
