@@ -117,12 +117,27 @@ input::-webkit-input-placeholder {
   background: rgba(0, 0, 0, 0.3);
   color: #ffffff;
 }
+.right_wrap1 .user_table_accord label.checkbox-inline{ color: #8a8e9c;    font-size: 16px;margin:0;width: 100%;    color: #363636;}
+.right_wrap1 .user_table_accord label.checkbox-inline input{margin-top: 10px;}
+.user_table_accord h3{color: #ffffff;
+    font-size: 18px;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    line-height: 40px;
+    font-weight: 300;
+    letter-spacing: 3px;}
+#table-search-input .input-group{margin-bottom: 10px;}
+#table-search-input .input-group .btn-info{background: #f3db14;    border-color: #f3db14;}
+.user_table_accord .panel-group{margin:0;padding:0;text-align: left;}
+.user_table_accord .panel.panel-default{border-radius: 0;-moz-border-radius: 0;-webkit-border-radius: 0;}
 .user-table .sub-table .table{margin:0;}
 .sub-table{padding: 0 !important;}
 .user-table th{text-align: center;background: #f3db14;}
 .sub-table table{background: transparent !important;}
 .sub-table table tr,.sub-table table td{background: transparent !important;}
 .sub-table table td a{color: inherit;}
+.sub-table table td a:hover{color:#f3db14;}
 .right_wrap1 .tab-content .user-table tr td label{margin:0;line-height: 0;}
 input::-moz-placeholder {
   /* Firefox 19+ */
