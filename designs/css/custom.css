@@ -119,6 +119,7 @@ input::-webkit-input-placeholder {
 }
 .right_wrap1 .user_table_accord label.checkbox-inline{ color: #8a8e9c;    font-size: 16px;margin:0;width: 100%;    color: #363636;}
 .right_wrap1 .user_table_accord label.checkbox-inline input{margin-top: 10px;}
+#table-search-input input{border-radius:30px;-moz-border-radius:30px;-webkit-border-radius:30px;}
 .user_table_accord h3{color: #ffffff;
     font-size: 18px;
     display: inline-block;
@@ -128,7 +129,8 @@ input::-webkit-input-placeholder {
     font-weight: 300;
     letter-spacing: 3px;}
 #table-search-input .input-group{margin-bottom: 10px;}
-#table-search-input .input-group .btn-info{background: #f3db14;    border-color: #f3db14;}
+#table-search-input .input-group-btn{z-index: 999;}
+#table-search-input .input-group .btn-info{background: #f3db14;    border-color: #f3db14;margin-left: -30px;border-radius: 0px 30px 30px 0px;-moz-border-radius: 0px 30px 30px 0px;-webkit-border-radius: 0px 30px 30px 0px;}
 .user_table_accord .panel-group{margin:0;padding:0;text-align: left;}
 .user_table_accord .panel.panel-default{border-radius: 0;-moz-border-radius: 0;-webkit-border-radius: 0;}
 .user-table .sub-table .table{margin:0;}
