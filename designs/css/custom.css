@@ -110,7 +110,20 @@ input::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: #8a8e9c;
 }
-
+.table-striped>tbody>tr:nth-of-type(odd){
+  background: #ffffff;
+}
+.table-striped>tbody>tr:nth-of-type(even){
+  background: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+}
+.user-table .sub-table .table{margin:0;}
+.sub-table{padding: 0 !important;}
+.user-table th{text-align: center;background: #f3db14;}
+.sub-table table{background: transparent !important;}
+.sub-table table tr,.sub-table table td{background: transparent !important;}
+.sub-table table td a{color: inherit;}
+.right_wrap1 .tab-content .user-table tr td label{margin:0;line-height: 0;}
 input::-moz-placeholder {
   /* Firefox 19+ */
   color: #8a8e9c;
