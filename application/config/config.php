@@ -24,6 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 $config['base_url'] = 'http://localhost/exam/onlineexam';
+$config['asset_url'] = 'http://localhost/exam/onlineexam/assets';
 
 
 /*
@@ -36,7 +37,7 @@ $config['base_url'] = 'http://localhost/exam/onlineexam';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
@@ -101,7 +102,7 @@ $config['charset'] = 'UTF-8';
 | setting this variable to TRUE (boolean).  See the user guide for details.
 |
 */
-$config['enable_hooks'] = FALSE;
+$config['enable_hooks'] = TRUE;
 
 /*
 |--------------------------------------------------------------------------
@@ -522,3 +523,15 @@ $config['rewrite_short_tags'] = FALSE;
 | Array:		array('10.0.1.200', '192.168.5.0/24')
 */
 $config['proxy_ips'] = '';
+
+
+$config['permissions']['admin']=array(
+                                        'admin/dashboard',
+                                        'admin/index'
+                                        
+);
+
+$config['file_upload'] = array('upload_path'=>'./assets/uploads/profile_pics/',
+                                'allowed_types' => 'gif|jpg|png',
+                                'max_size'=> 100);
+

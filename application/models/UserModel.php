@@ -35,6 +35,15 @@ class UserModel extends CI_Model
 		$sql = "SELECT * FROM roles inner join user_roles on roles.role_id=user_roles.role_id WHERE user_roles.user_id = ?  ";
         $record = $this->db->query($sql, array($user_id))->row();
 		return $record;
-	}
+    }
+    
+    public function get_all_users(){
+        $this->db->select('*');
+        $this->db->from('users');
+        $this->db->join('user_roles', 'user_roles.user_id = users.user_id');
+        $this->db->join('roles', 'user_roles.user_id = users.user_id');
+        $query = $this->db->get();
+
+    }
    
 }

@@ -10,7 +10,7 @@ class User extends CI_Controller {
 		parent::__construct();
 		$this->load->library(array('form_validation'));
 		$this->load->model('usermodel');
-
+		
 	}
 	public function index()
 	{
@@ -18,6 +18,24 @@ class User extends CI_Controller {
 	}
 	public function register()
 	{
+		$upload_config = $this->config->item('file_upload');
+		$this->load->library('upload', $upload_config);
+		
+		if ( ! $this->upload->do_upload('userimage'))
+         {
+                        $error = array('error' => $this->upload->display_errors());
+						echo "<pre>";
+						print_r($error);
+						die;
+                        
+		
+		}
+		else{
+			echo "<pre>";	
+			print_r($this->upload->data());
+			echo "upload success";
+			die;
+		}
 		$this->data['title'] = 'Registration';
 		$this->form_validation->set_rules('username', 'Username is required', 'required');
 		$this->form_validation->set_rules('password', 'Password is required', 'required');

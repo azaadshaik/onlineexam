@@ -65,4 +65,38 @@
       });
     });  
 
+
+    //Admin Dashboard Menu and content slide actions
+    $(".slide-toggle").click(function(){
+        $(".top_con").toggleClass("minimise_Con");
+    });
+    
+    $(".slide-toggle").click(function(){
+            $(".left_wrap1").animate({
+                width: "toggle"
+            });
+             $(".right_wrap1").animate({
+                width: "toggle"
+            });
+     });
+    
+ 
+
 })(jQuery);
+
+
+function readURL(input) {
+  if (input.files && input.files[0]) {
+      var reader = new FileReader();
+
+      reader.onload = function (e) {
+          $('#profilePic')
+              .attr('src', e.target.result)
+              .width(50)
+              .height(50);
+              $('#profilePic').removeAttr('class');   
+      };
+
+      reader.readAsDataURL(input.files[0]);
+  }
+}

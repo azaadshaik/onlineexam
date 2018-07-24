@@ -35,13 +35,16 @@ class PulseAuth extends CI_Controller
 			
 			switch($role_name){
 				case 'admin':
-				$path='admin/dashboard';
+				$path='admin';
 				break;
 				case 'branch_manager':
-				$path='bm/dashboard';
+				$path='bm';
+				break;
+				case 'parent':
+				$path='parent';
 				break;
 				default:
-				$path='student/dashboard';
+				$path='student';
 				break; 
 
 			}
@@ -61,12 +64,7 @@ class PulseAuth extends CI_Controller
 	public function login()
 	{
 
-		/* echo "<pre>";
-		print_r($_POST);
-		print_r($this->input->post());
-		die; */
 		
-
 		// validate form input
 		$this->form_validation->set_rules('username', 'Username is required', 'required');
 		$this->form_validation->set_rules('password', 'Password is required', 'required');
@@ -80,8 +78,7 @@ class PulseAuth extends CI_Controller
 
 			if ($result)
 			{
-				echo "<pre>";
-				print_r($result);
+				
 				
 				$role_data = $this->usermodel->get_role_by_user_id($result->user_id);
 				$rolecode='';
@@ -107,8 +104,9 @@ class PulseAuth extends CI_Controller
 				// if the login was un-successful
 				// redirect them back to the login page
 				$this->session->set_flashdata('message', 'Authentication Failed');
+				$data['title'] = 'Login';
 				//redirect('pulseauth/login', 'refresh'); // use redirects instead of loading views for compatibility with MY_Controller libraries
-				$this->template->load('default', 'auth/login', $this->data);
+				$this->template->load('default', 'auth/login', $data);
 			}
 		}
 		else
@@ -126,9 +124,9 @@ class PulseAuth extends CI_Controller
 				'id' => 'password',
 				'type' => 'password',
 			);
-
+			$data['title'] = 'Login';
 			//$this->_render_page('auth' . DIRECTORY_SEPARATOR . 'login', $this->data);
-			$this->template->load('default', 'auth/login', $this->data);
+			$this->template->load('default', 'auth/login', $data);
 		}
 	}
 

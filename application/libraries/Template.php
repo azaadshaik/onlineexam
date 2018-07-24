@@ -13,6 +13,7 @@
 {
     if ( ! is_null( $body_view ) ) 
     {
+       
         if ( file_exists( APPPATH.'views/'.$tpl_view.'/'.$body_view ) ) 
         {
             $body_view_path = $tpl_view.'/'.$body_view;
@@ -35,6 +36,7 @@
         }
          
         $body = $this->ci->load->view($body_view_path, $data, TRUE);
+
          
         if ( is_null($data) ) 
         {
@@ -49,7 +51,7 @@
             $data->body = $body;
         }
     }
-     
+    
     $this->ci->load->view('templates/'.$tpl_view, $data);
 }
     }
