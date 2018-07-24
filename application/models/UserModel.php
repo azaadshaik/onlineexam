@@ -30,10 +30,10 @@ class UserModel extends CI_Model
         return $result; 
     }
 
-    public function get_role_by_user_id($user_id){
+    public function get_role_by_id($role_id){
 
-		$sql = "SELECT * FROM roles inner join user_roles on roles.role_id=user_roles.role_id WHERE user_roles.user_id = ?  ";
-        $record = $this->db->query($sql, array($user_id))->row();
+		$sql = "SELECT * FROM roles WHERE role_id = ?  ";
+        $record = $this->db->query($sql, array($role_id))->row();
 		return $record;
     }
     

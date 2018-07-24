@@ -23,8 +23,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/exam/onlineexam';
-$config['asset_url'] = 'http://localhost/exam/onlineexam/assets';
+$config['base_url'] = 'http://localhost:81/exam';
+$config['asset_url'] = 'http://localhost:81/exam/assets';
 
 
 /*

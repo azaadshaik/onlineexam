@@ -80,7 +80,7 @@ class PulseAuth extends CI_Controller
 			{
 				
 				
-				$role_data = $this->usermodel->get_role_by_user_id($result->user_id);
+				$role_data = $this->usermodel->get_role_by_id($result->user_role);
 				$rolecode='';
 				if($role_data) $rolecode=$role_data->role_code;
 				$session_data =  array(
