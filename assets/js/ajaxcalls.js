@@ -17,8 +17,29 @@
     });
 });*/
 
+$('.admin_container .nav-tabs li > a').click(function(e){
+
+   
+    var url= this.getAttribute('data-url');
+    var contentDiv = this.getAttribute('href');
+    if ( $(contentDiv).children().length > 0 ) {
+        
+        return;
+   }
+   
+    $.ajax({
+        url: url,
+        type: 'GET',
+        success: function (data) {
+            $(contentDiv).html(data);
+        }
+        
+    });
+
+});
+
 function submitForm(formId,ele){
-    //event.preventDefault();
+    
     var thisform = document.getElementById(formId);
     var action = thisform.getAttribute('action');
     var formData = new FormData(thisform);
@@ -36,3 +57,4 @@ function submitForm(formId,ele){
     });
     return false;   
 }
+

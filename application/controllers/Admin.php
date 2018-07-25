@@ -34,7 +34,19 @@ class Admin extends CI_Controller
         $this->data['title'] = 'Admin Dashboard';
         $this->template->load('default', 'admin/dashboard', $this->data);
         
-    }
+	}
+	
+	public function create_institute(){
+
+		$data['title'] = 'New Institution';
+        $this->load->view('admin/create_institute', $data);
+	}
+
+	public function create_school(){
+
+		$data['title'] = 'New School';
+        $this->load->view('admin/create_school', $data);
+	}
 
 	
 }
