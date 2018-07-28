@@ -9,7 +9,7 @@ class Admin extends CI_Controller
        
 		parent::__construct();
 		$this->load->library(array('form_validation'));
-		$this->load->model(array('usermodel'));
+		$this->load->model(array('usermodel','adminmodel'));
 		if (!$this->session->userdata('logged_in')){
             redirect('pulseauth/login','refresh');
         }
@@ -39,14 +39,70 @@ class Admin extends CI_Controller
 	public function create_institute(){
 
 		$data['title'] = 'New Institution';
-        $this->load->view('admin/create_institute', $data);
+		$this->form_validation->set_rules('institution_name', 'Institutution name is required', 'required');
+		$this->form_validation->set_rules('institution_code', 'Institutution code is required', 'required');
+		
+		if ($this->form_validation->run() === TRUE)
+		{
+			$institution_data['institution_code'] = $this->input->post('institution_code');
+			$institution_data['institution_name'] = $this->input->post('institution_name');
+						
+			$this->adminmodel->create_institution($institution_data);
+			
+
+
+		}
+		else{
+			$this->load->view('admin/create_institute', $data);
+			
+		}
+		
 	}
 
 	public function create_school(){
 
 		$data['title'] = 'New School';
-        $this->load->view('admin/create_school', $data);
+		$this->form_validation->set_rules('school_name', 'School name is required', 'required');
+		$this->form_validation->set_rules('school_code', 'School code is required', 'required');
+		
+		if ($this->form_validation->run() === TRUE)
+		{
+			$school_data['school_code'] = $this->input->post('school_code');
+			$school_data['school_name'] = $this->input->post('school_name');
+			$school_data['school_status'] = 1;
+						
+			$this->adminmodel->create_school($school_data);
+			
+
+
+		}
+		else{
+			$this->load->view('admin/create_school', $data);
+		}
+        
 	}
+	public function create_roles()
+	{
+		$this->data['title'] = 'Role Creation';
+		$this->form_validation->set_rules('rolecode', 'Role code is required', 'required');
+		$this->form_validation->set_rules('rolename', 'Role name is required', 'required');
+		
+		if ($this->form_validation->run() === TRUE)
+		{
+			$role_data['role_code'] = $this->input->post('rolecode');
+			$role_data['role_name'] = $this->input->post('rolename');
+						
+			$this->adminmodel->create_role($role_data);
+			
+
+
+		}
+		else{
+			$this->load->view('roles/create', $this->data);
+		}
+		
+		
+    }
 
 	
 }
