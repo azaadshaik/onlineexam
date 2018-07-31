@@ -247,10 +247,14 @@ input:-moz-placeholder {
   padding: 0;
   position: relative;
 }
-
+.logo{max-width: 100%;}
+footer{
+  margin-top: 50px;
+}
 .bg_img {
   position: absolute;
   left: 0;
+  max-width: 100%;
 }
 
 .stu_sec_left {
@@ -503,4 +507,20 @@ footer p {
 
 .adm_checkbox .checkbox-inline {
   width: 30%;
+}
+
+
+@media (max-width: 768px){
+  .logo{
+        margin-top: 15px;
+  }
+  .stuhead_wel_txt{
+    font-size: 12px;
+  }
+  .profile-pic{
+    max-width: 100%;
+  }
+  .left_wrap1{
+    padding:0 15px !important;
+  }
 }
