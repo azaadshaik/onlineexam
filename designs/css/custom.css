@@ -90,6 +90,8 @@ body {
     width: 100%;
     padding: 20px 0;
 }
+.display-student{display: inline-block !important;    width: 100%;}
+.display-student .form-group{width:90%;}
 .user-pro-pic{position: relative;}
 .user-pro-pic a{position: absolute;
     color: #ffffff;

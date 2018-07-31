@@ -16,7 +16,27 @@
       <link rel="stylesheet" href="css/templatemo-style.css">
       <link rel="stylesheet" href="css/custom.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script type="text/javascript">
+        $(function () {
+               $('#Studentsel1').bind('change keyup', function () {
+                  //get value of selected option
+                var value = $(this).children("option:selected").attr('value');
+                   // do something here
+                if(value == "Student")
+                {
+                    
+                    $("#selected-student").addClass("display-student");
+                }
+                else{
+                    $("#selected-student").removeClass("display-student");
+                }
+
+            }).change();
+
+        });
+    </script>
    </head>
+   
    <body>
       <img class="bg_img" src="images/dashbaord_bg2.png">
       <!-- Header -->
@@ -98,14 +118,53 @@
                            <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Role</label>
                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 drop_down">
                               <div class="form-group">
-                                 <select class="dropdown form-control" id="sel1">
-                                    <option>Admin</option>
+                                 <select class="dropdown form-control" id="Studentsel1">
+                                    <option value="Admin">Admin</option>
                                     <option>Manager</option>
                                     <option>Question Preparation</option>
-                                    <option>Student</option>
+                                    <option value="Student">Student</option>
                                     <option>Parent</option>
                                  </select>
                               </div>
+                              <!-- sub drop downs -->
+                              <div id="selected-student" style="display:none">
+                               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 drop_down">
+                                 <div class="form-group">
+                                 <select class="dropdown form-control" >
+                                    <option>School</option>
+                                    <option>VBHS</option>
+                                    <option>RSR</option>
+                                    <option>ZPHS</option>
+                                    <option>NALANDA</option>
+                                 </select>
+                                 </div>
+                              </div>
+                              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 drop_down">
+                                 <div class="form-group">
+                                 <select class="dropdown form-control" >
+                                    <option>Class</option>
+                                    <option>10 <sup>th</sup></option>
+                                    <option>9 <sup>th</sup></option>
+                                    <option>8 <sup>th</sup></option>
+                                    <option>7 <sup>th</sup></option>
+                                    <option>6 <sup>th</sup></option>
+                                 </select>
+                                 </div>
+                              </div>
+                              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 drop_down">
+                                 <div class="form-group">
+                                 <select class="dropdown form-control">
+                                     <option>Section</option>
+                                    <option>A</option>
+                                    <option>B</option>
+                                    <option>C</option>
+                                    <option>D</option>
+                                    <option>E</option>
+                                 </select>
+                                 </div>
+                              </div>
+                           </div>
+                            <!-- sub drop downs -->
                            </div>
                         </div>
                         <div class="adm_inputs_wrap">
