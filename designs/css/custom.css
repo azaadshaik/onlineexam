@@ -85,7 +85,26 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3db14', endColorstr='#ebb511', GradientType=1);
   /* IE6-9 */
 }
-
+.user-profile_container{
+      display: inline-block;
+    width: 100%;
+    padding: 20px 0;
+}
+.display-student{display: inline-block !important;    width: 100%;}
+.display-student .form-group{width:90%;}
+.user-pro-pic{position: relative;}
+.user-pro-pic a{position: absolute;
+    color: #ffffff;
+    bottom: 6px;
+    right: 9px;
+    font-size: 16px;
+    background: rgba(0,0,0,0.4);
+    padding: 4px;
+    width: 92%;
+    margin: 0;
+    left: 6px;}
+ .user-profile_container .date{ color: #ffffff;   line-height: 51px;
+    padding: 15px 0;}
 .signin-btn:active {
   background: #ebb511;
 }
@@ -228,10 +247,14 @@ input:-moz-placeholder {
   padding: 0;
   position: relative;
 }
-
+.logo{max-width: 100%;}
+footer{
+  margin-top: 50px;
+}
 .bg_img {
   position: absolute;
   left: 0;
+  max-width: 100%;
 }
 
 .stu_sec_left {
@@ -484,4 +507,20 @@ footer p {
 
 .adm_checkbox .checkbox-inline {
   width: 30%;
+}
+
+
+@media (max-width: 768px){
+  .logo{
+        margin-top: 15px;
+  }
+  .stuhead_wel_txt{
+    font-size: 12px;
+  }
+  .profile-pic{
+    max-width: 100%;
+  }
+  .left_wrap1{
+    padding:0 15px !important;
+  }
 }
