@@ -16,6 +16,13 @@ class User extends CI_Controller {
 	{
 		
 	}
+	public function get_users(){
+
+		$offset = 0;
+		$limit=50;
+		$this->userModel->get_all_users();
+
+	}
 	public function register()
 	{
 		
@@ -42,11 +49,11 @@ class User extends CI_Controller {
                 $error = array('error' => $this->upload->display_errors());
 		                  
 		
-		}
+			}
 		else{
 			$image_data = $this->upload->data();
 			$user_data['user_image'] = $image_data['orig_name'];
-			
+			$this->usermodel->add_user($user_data);	
 		}
 			
 			$data['message'] = 'User created successfully';

@@ -22,6 +22,7 @@ class UserModel extends CI_Model
        
     }
 
+   
     public function get_roles(){
 
         $this->db->select('*');
@@ -40,9 +41,12 @@ class UserModel extends CI_Model
     public function get_all_users(){
         $this->db->select('*');
         $this->db->from('users');
-        $this->db->join('user_roles', 'user_roles.user_id = users.user_id');
-        $this->db->join('roles', 'user_roles.user_id = users.user_id');
-        $query = $this->db->get();
+        $this->db->join('roles', 'users.user_role = roles.role_id');
+        $this->db->order_by("user_reg_date", "desc");
+        
+        $result = $this->db->get()->result_array();
+        return $result;
+
 
     }
    

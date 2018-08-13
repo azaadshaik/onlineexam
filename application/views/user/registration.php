@@ -21,7 +21,7 @@
                            <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Role</label>
                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 drop_down">
                               <div class="form-group">
-                                 <select class="dropdown form-control" id="role" name="role">
+                                 <select class="dropdown form-control" id="role" name="role" onchange="renderRolebasedFields(this.value);">
                                     <option value="0">Select Role</option>
                                     <?php
                                         foreach($roles as $role){
@@ -32,6 +32,10 @@
                                  </select>
                               </div>
                            </div>
+                        </div>
+                         <div id="user_class_map">
+                                                
+
                         </div>
                        
                         <div class="adm_inputs_wrap">
@@ -64,7 +68,7 @@
                         </div>
                      </div>
                         <div class="col-md-12">
-                           <button  class="signin-btn" type="button" onclick="submitForm('regForm');">Submit</button>
+                           <button  class="signin-btn" type="button" onclick="submitForm('regForm','admin/users','users_tab');">Submit</button>
                         </div>
 						</form>
                      </div>

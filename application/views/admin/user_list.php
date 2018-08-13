@@ -1,6 +1,6 @@
 <!--User List starts here -->
-                  <div id="User_List" class="tab-pane fade">
-                     <h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">User List</h2>
+                  
+<h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">User List</h2>
                      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                         <div class="user_table_accord">
                            <h3>Filter By</h3>
@@ -100,11 +100,19 @@
                      </div>
                      <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
                         <div id="table-search-input">
-                           <div class="input-group col-md-6 pull-right">
-                              <input type="text" class="form-control input-lg" placeholder="Search" />
+                           <div class="input-group col-md-6">
+                              <input type="text" class="form-control input-lg" placeholder="Search by username" />
                               <span class="input-group-btn">
                               <button class="btn btn-info btn-lg" type="button">
                               <i class="fa fa-search-plus"></i>
+                              </button>
+                              </span>
+                           </div>
+						   <div class="col-md-3 pull-right">
+                              
+                              <span class="input-group-btn">
+                              <button class="btn btn-info btn-lg" type="button" onclick="createNew('user/register','users_tab');">
+                              <i class="fa fa-search-plus">Add User</i>
                               </button>
                               </span>
                            </div>
@@ -121,9 +129,14 @@
                                  </tr>
                               </thead>
                               <tbody>
+                              <?php 
+
+                              foreach($user_list as $user) { ?>
+
+                              
                                  <tr>
-                                    <td>Azad</td>
-                                    <td>Admin</td>
+                                    <td><?php echo $user['user_name'];?></td>
+                                    <td><?php echo $user['role_name'];?></td>
                                     <td>VBHS</td>
                                     <td>9</td>
                                     <td class="sub-table">
@@ -138,110 +151,10 @@
                                        </table>
                                     </td>
                                  </tr>
-                                 <tr>
-                                    <td>Wasim</td>
-                                    <td>Manager</td>
-                                    <td>Nalands</td>
-                                    <td>8</td>
-                                    <td class="sub-table">
-                                       <table class="table table-bordered table-striped">
-                                          <tbody>
-                                             <tr>
-                                                <td><a href="#" data-toggle="dropdown" title="View"><i class="fa fa-eye"></i></a></td>
-                                                <td><a href="#" data-toggle="dropdown" title="Edit"><i class="fa fa-pencil-square-o"></i></a></td>
-                                                <td><a href="#" data-toggle="dropdown" title="Delete"><i class="fa fa-trash"></i></a></td>
-                                             </tr>
-                                          </tbody>
-                                       </table>
-                                    </td>
-                                 </tr>
-                                 <tr>
-                                    <td>Akram</td>
-                                    <td>admin2</td>
-                                    <td>ZPHS</td>
-                                    <td>7</td>
-                                    <td class="sub-table">
-                                       <table class="table table-bordered table-striped">
-                                          <tbody>
-                                             <tr>
-                                                <td><a href="#" data-toggle="dropdown" title="View"><i class="fa fa-eye"></i></a></td>
-                                                <td><a href="#" data-toggle="dropdown" title="Edit"><i class="fa fa-pencil-square-o"></i></a></td>
-                                                <td><a href="#" data-toggle="dropdown" title="Delete"><i class="fa fa-trash"></i></a></td>
-                                             </tr>
-                                          </tbody>
-                                       </table>
-                                    </td>
-                                 </tr>
-                                 <tr>
-                                    <td>Akram</td>
-                                    <td>admin2</td>
-                                    <td>ZPHS</td>
-                                    <td>7</td>
-                                    <td class="sub-table">
-                                       <table class="table table-bordered table-striped">
-                                          <tbody>
-                                             <tr>
-                                                <td><a href="#" data-toggle="dropdown" title="View"><i class="fa fa-eye"></i></a></td>
-                                                <td><a href="#" data-toggle="dropdown" title="Edit"><i class="fa fa-pencil-square-o"></i></a></td>
-                                                <td><a href="#" data-toggle="dropdown" title="Delete"><i class="fa fa-trash"></i></a></td>
-                                             </tr>
-                                          </tbody>
-                                       </table>
-                                    </td>
-                                 </tr>
-                                 <tr>
-                                    <td>Akram</td>
-                                    <td>admin2</td>
-                                    <td>ZPHS</td>
-                                    <td>7</td>
-                                    <td class="sub-table">
-                                       <table class="table table-bordered table-striped">
-                                          <tbody>
-                                             <tr>
-                                                <td><a href="#" data-toggle="dropdown" title="View"><i class="fa fa-eye"></i></a></td>
-                                                <td><a href="#" data-toggle="dropdown" title="Edit"><i class="fa fa-pencil-square-o"></i></a></td>
-                                                <td><a href="#" data-toggle="dropdown" title="Delete"><i class="fa fa-trash"></i></a></td>
-                                             </tr>
-                                          </tbody>
-                                       </table>
-                                    </td>
-                                 </tr>
-                                 <tr>
-                                    <td>Akram</td>
-                                    <td>admin2</td>
-                                    <td>ZPHS</td>
-                                    <td>7</td>
-                                    <td class="sub-table">
-                                       <table class="table table-bordered table-striped">
-                                          <tbody>
-                                             <tr>
-                                                <td><a href="#" data-toggle="dropdown" title="View"><i class="fa fa-eye"></i></a></td>
-                                                <td><a href="#" data-toggle="dropdown" title="Edit"><i class="fa fa-pencil-square-o"></i></a></td>
-                                                <td><a href="#" data-toggle="dropdown" title="Delete"><i class="fa fa-trash"></i></a></td>
-                                             </tr>
-                                          </tbody>
-                                       </table>
-                                    </td>
-                                 </tr>
-                                 <tr>
-                                    <td>Akram</td>
-                                    <td>admin2</td>
-                                    <td>ZPHS</td>
-                                    <td>7</td>
-                                    <td class="sub-table">
-                                       <table class="table table-bordered table-striped">
-                                          <tbody>
-                                             <tr>
-                                                <td><a href="#" data-toggle="dropdown" title="View"><i class="fa fa-eye"></i></a></td>
-                                                <td><a href="#" data-toggle="dropdown" title="Edit"><i class="fa fa-pencil-square-o"></i></a></td>
-                                                <td><a href="#" data-toggle="dropdown" title="Delete"><i class="fa fa-trash"></i></a></td>
-                                             </tr>
-                                          </tbody>
-                                       </table>
-                                    </td>
-                                 </tr>
+                               <?php } ?>  
+                                 
                               </tbody>
                            </table>
                         </div>
                      </div>
-                  </div>
+                  
