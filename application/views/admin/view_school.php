@@ -43,7 +43,8 @@
                                         ?>  
                                         <div>
                                         <span><?php echo $class .'&nbsp;&nbsp;Sections: ';?></span>
-                                        <span><?php
+                                        <span>
+                                        <?php
                                         foreach($sections as $section){
                                           echo $section.'&nbsp;';
                                         }
