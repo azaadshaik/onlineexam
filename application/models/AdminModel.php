@@ -43,10 +43,10 @@ class AdminModel extends CI_Model
         $this->db->join('institution','schools.school_institution = institution.institution_id');
         $this->db->join('states','schools.school_state = states.state_id');
         $this->db->join('districts','schools.school_district = districts.district_id');
-        $this->db->join('school_classes','school_classes.school_classes_school_id = schools.school_id');
-        $this->db->join('classes','classes.class_id = school_classes.school_classes_class_id');
-        $this->db->join('class_sections','class_sections.class_sections_school_classes_id = school_classes.school_classes_id');
-        $this->db->join('sections','sections.section_id = class_sections.class_sections_section_id');
+        $this->db->join('school_classes','school_classes.school_classes_school_id = schools.school_id','left');
+         $this->db->join('classes','classes.class_id = school_classes.school_classes_class_id','left');
+         $this->db->join('class_sections','class_sections.class_sections_school_classes_id = school_classes.school_classes_id','left');
+         $this->db->join('sections','sections.section_id = class_sections.class_sections_section_id','left');
         $this->db->where('schools.school_id='.$school_id);
 
         $result = $this->db->get()->result_array();
@@ -97,6 +97,16 @@ class AdminModel extends CI_Model
 
        
     }
+	 public function update_school($school_data,$school_id){
+
+        
+        $result= $this->db->update('schools', $data, "id = $school_id");
+        return $result;
+           
+
+       
+    }
+	
     // public function get_role_by_role_id($role_id){
 
     //     $this->db->select('*');
@@ -131,5 +141,17 @@ class AdminModel extends CI_Model
         $result= $this->db->insert('class_sections', $data);
         return $result;
     }
+	
+	public function get_all_clasess_by_school_id($school_id){
+		
+		$where = 'school_classes_school_id='.$school_id;
+		$this->db->select('*');
+		$this->db->from('school_classes');
+		$this->db->where($where);
+		$result = $this->db->get()->result_array();
+        return $result;
+		
+		
+	}
    
 }
