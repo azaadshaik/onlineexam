@@ -55,7 +55,7 @@ body {
   ;
 }
 
-.signin-btn {
+.signin-btn{
   background: #f3db14;
   padding: 15px 70px;
   margin-top: 25px;
@@ -66,13 +66,36 @@ body {
   -moz-border-radius: 35px;
   -webkit-border-radius: 35px;
 }
-
+#User_List h2{width:auto !important;}
+.addnew-btn {
+  background: #f3db14;
+  padding: 15px 70px;
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
+  color: #000000;
+  border-radius: 35px;
+  -moz-border-radius: 35px;
+  -webkit-border-radius: 35px;
+}
+.apply-btn{background: #f3db14;
+    padding: 8px 31px;
+    border: none;
+    outline: none;
+    color: #000000;
+    border-radius: 35px;
+    -moz-border-radius: 35px;
+    -webkit-border-radius: 35px;
+    margin-top: 58px;
+    margin-left: 15px;}
 .login-center {
   background: url("../images/frontpage-bg.jpg");
 }
-
+.form-control{height: auto !important;}
+.user-list-header .adm_inputs_wrap .drop_down{padding: 0 5px;}
+.user-list-header .adm_inputs_wrap label{width: 100%;display: inline-block;width: 100%;}
 .bg-cls,
-.signin-btn:hover {
+.signin-btn:hover,.addnew-btn:hover {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#195fbf+0,1071dd+100 */
   background: #f3db14;
   /* Old browsers */
