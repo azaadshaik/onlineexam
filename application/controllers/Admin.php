@@ -129,44 +129,111 @@ class Admin extends CI_Controller
         
 	}
 	public function view_school(){
-
-		$school_id = $this->input->get('school_id');
-		$result = $this->adminmodel->get_school_by_id($school_id);
-		$data['school_data'] = $result;
-		$class_sections = array();
-		foreach($result as $item){
-			$class_sections[$item['class_name']] = array();
-		}
-		foreach($result as $class){
-
-			if(array_key_exists($class['class_name'],$class_sections)){
-				array_push($class_sections[$class['class_name']],$class['section_code']) ;	
-			}
-		}
-		$data['class_sections'] = $class_sections;
 		
-		$this->load->view('admin/view_school', $data);
+		
+			$school_id = $this->input->get('school_id');
+			$result = $this->adminmodel->get_school_by_id($school_id);
+			$data['school_data'] = $result;
+			$class_sections = array();
+			foreach($result as $item){
+				$class_sections[$item['class_name']] = array();
+			}
+			foreach($result as $class){
+
+				if(array_key_exists($class['class_name'],$class_sections)){
+					array_push($class_sections[$class['class_name']],$class['section_code']) ;	
+				}
+			}
+				
+			
+			$data['class_sections'] = $class_sections;
+			
+			$this->load->view('admin/view_school', $data);
+		
 		
 	}
 	public function edit_school(){
+		$this->form_validation->set_rules('school_name', 'School name is required', 'required');
+		$this->form_validation->set_rules('school_code', 'School code is required', 'required');
+		
+		if ($this->form_validation->run() === TRUE)
+		{
+			
+			$school_data['school_code'] = $this->input->post('school_code');
+			$school_data['school_name'] = $this->input->post('school_name');
+			$school_data['school_state'] = $this->input->post('state');
+			$school_data['school_institution'] = $this->input->post('institution');
+			$school_data['school_district'] = $this->input->post('district');
+			$school_data['school_address'] = $this->input->post('address');
+			$school_data['school_phone'] = $this->input->post('contact_number');
+			$school_data['school_principal'] = $this->input->post('principal_name');
+			$school_data['school_status'] = 1;
+			$classes = $this->input->post('classes');
+			$sections = $this->input->post('sections');
+			$school_id = $this->input->post('school_id');		
+			//$this->adminmodel->update_school($school_data,$school_id);
+			$this->update_classes_and_sections($school_id,$classes,$sections);
+			
+			$this->schools();
 
+
+		}
+		else{
 		$school_id = $this->input->get('school_id');
 		$result = $this->adminmodel->get_school_by_id($school_id);
+		$school_state = $result[0]['state_id'];
+		$state_districts = $this->adminmodel->get_districts_by_state_id($school_state);
+			
 		$data['school_data'] = $result;
 		$class_sections = array();
 		foreach($result as $item){
-			$class_sections[$item['class_name']] = array();
+			$class_sections[$item['class_id']] = array();
 		}
 		foreach($result as $class){
 
-			if(array_key_exists($class['class_name'],$class_sections)){
-				array_push($class_sections[$class['class_name']],$class['section_code']) ;	
+			if(array_key_exists($class['class_id'],$class_sections)){
+				array_push($class_sections[$class['class_id']],$class['section_id']) ;	
 			}
 		}
-		$data['class_sections'] = $class_sections;
+			$data['class_sections'] = $class_sections;
+			$institution_list = $this->adminmodel->get_all_institutions();
+			$state_list = $this->adminmodel->get_all_states();	
+			$classes_list = $this->adminmodel->get_all_classes();
+			$sections_list = $this->adminmodel->get_all_sections();		
+
+			$data['institution_list'] = $institution_list;
+			$data['state_list'] = $state_list;
+			$data['classes_list'] = $classes_list;
+			$data['sections_list'] = $sections_list;
+			$data['state_districts'] = $state_districts;
+			// echo "<pre>";
+			// print_r($data['state_districts']);
+			// die;
 		
 		$this->load->view('admin/edit_school', $data);
+	}
 		
+	}
+	
+	public function update_classes_and_sections($school_id,$classes_selected,$sections_selected){
+		$school_classes = $this->adminmodel->get_all_clasess_by_school_id($school_id);
+			echo "<pre>";
+			print_r($school_classes);
+			die;
+			if(!empty($school_classes)){
+				
+				foreach($school_classes as $class){
+					if(!in_array($class['school_classes_class_id'],$classes)){
+					//Deactivate the class and deactivate all the sections of that class	
+					}
+					else{
+						//Check if the class stored is in deactivate mode if so activate the class and all sections of it.
+					}
+					
+					
+					
+				}
+			}
 	}
 	public function create_roles()
 	{
