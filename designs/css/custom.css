@@ -91,6 +91,15 @@ body {
 .login-center {
   background: url("../images/frontpage-bg.jpg");
 }
+.user-static{color: #f3db14;
+    font-size: 18px;
+    display: inline-block;
+    font-weight: 300;
+    text-align: left;
+    line-height: 36px;
+    margin: 15px 0;}
+.userprof2 .adm_inputs_wrap{margin:0;}
+.userprof2 .adm_inputs_wrap label,.userprof2 .adm_inputs_wrap .user-static{    margin: 5px 0 !important;}
 .form-control{height: auto !important;}
 .user-list-header .adm_inputs_wrap .drop_down{padding: 0 5px;}
 .user-list-header .adm_inputs_wrap label{width: 100%;display: inline-block;width: 100%;}
@@ -402,6 +411,12 @@ footer{
   text-align: left;
      line-height: 30px;
     margin: 15px 0;
+    padding: 0;
+}
+#View_school_tab .adm_inputs_wrap{margin: 0;}
+#View_school_tab .adm_inputs_wrap label,
+#View_school_tab .adm_inputs_wrap .user-static{
+    margin: 5px 0 !important;
 }
 .custom-file-upload{display:inline-block;width: 100%;    margin: 10px 0;}
 .custom-file-upload input[type="file"] {

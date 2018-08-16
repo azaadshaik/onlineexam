@@ -17,26 +17,25 @@
       <link rel="stylesheet" href="css/custom.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script type="text/javascript">
-        $(function () {
-               $('#Studentsel1').bind('change keyup', function () {
-                  //get value of selected option
-                var value = $(this).children("option:selected").attr('value');
-                   // do something here
-                if(value == "Student")
-                {
-                    
-                    $("#selected-student").addClass("display-student");
-                }
-                else{
-                    $("#selected-student").removeClass("display-student");
-                }
-
-            }).change();
-
-        });
-    </script>
+         $(function () {
+                $('#Studentsel1').bind('change keyup', function () {
+                   //get value of selected option
+                 var value = $(this).children("option:selected").attr('value');
+                    // do something here
+                 if(value == "Student")
+                 {
+                     
+                     $("#selected-student").addClass("display-student");
+                 }
+                 else{
+                     $("#selected-student").removeClass("display-student");
+                 }
+         
+             }).change();
+         
+         });
+      </script>
    </head>
-   
    <body>
       <img class="bg_img" src="images/dashbaord_bg2.png">
       <!-- Header -->
@@ -93,6 +92,8 @@
                      <li class="repo-ico nav-link"><a data-toggle="tab" href="#Create_Question_Paper">Create Question Paper</a><i  class="fa fa-caret-down" style="display: none;"></i></li>
                      <li class="repo-ico nav-link"><a data-toggle="tab" href="#User_List">User List</a><i  class="fa fa-caret-down" style="display: none;"></i></li>
                      <li class="repo-ico nav-link"><a data-toggle="tab" href="#User_Profile">User Profile</a><i  class="fa fa-caret-down" style="display: none;"></i></li>
+                     <li class="repo-ico nav-link"><a data-toggle="tab" href="#User_Profile1">User Profile1</a><i  class="fa fa-caret-down" style="display: none;"></i></li>
+                     <li class="repo-ico nav-link"><a data-toggle="tab" href="#View_school_tab">View school</a><i  class="fa fa-caret-down" style="display: none;"></i></li>
                   </ul>
                </div>
             </div>
@@ -128,43 +129,43 @@
                               </div>
                               <!-- sub drop downs -->
                               <div id="selected-student" style="display:none">
-                               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 drop_down">
-                                 <div class="form-group">
-                                 <select class="dropdown form-control" >
-                                    <option>School</option>
-                                    <option>VBHS</option>
-                                    <option>RSR</option>
-                                    <option>ZPHS</option>
-                                    <option>NALANDA</option>
-                                 </select>
+                                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 drop_down">
+                                    <div class="form-group">
+                                       <select class="dropdown form-control" >
+                                          <option>School</option>
+                                          <option>VBHS</option>
+                                          <option>RSR</option>
+                                          <option>ZPHS</option>
+                                          <option>NALANDA</option>
+                                       </select>
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 drop_down">
+                                    <div class="form-group">
+                                       <select class="dropdown form-control" >
+                                          <option>Class</option>
+                                          <option>10 <sup>th</sup></option>
+                                          <option>9 <sup>th</sup></option>
+                                          <option>8 <sup>th</sup></option>
+                                          <option>7 <sup>th</sup></option>
+                                          <option>6 <sup>th</sup></option>
+                                       </select>
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 drop_down">
+                                    <div class="form-group">
+                                       <select class="dropdown form-control">
+                                          <option>Section</option>
+                                          <option>A</option>
+                                          <option>B</option>
+                                          <option>C</option>
+                                          <option>D</option>
+                                          <option>E</option>
+                                       </select>
+                                    </div>
                                  </div>
                               </div>
-                              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 drop_down">
-                                 <div class="form-group">
-                                 <select class="dropdown form-control" >
-                                    <option>Class</option>
-                                    <option>10 <sup>th</sup></option>
-                                    <option>9 <sup>th</sup></option>
-                                    <option>8 <sup>th</sup></option>
-                                    <option>7 <sup>th</sup></option>
-                                    <option>6 <sup>th</sup></option>
-                                 </select>
-                                 </div>
-                              </div>
-                              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 drop_down">
-                                 <div class="form-group">
-                                 <select class="dropdown form-control">
-                                     <option>Section</option>
-                                    <option>A</option>
-                                    <option>B</option>
-                                    <option>C</option>
-                                    <option>D</option>
-                                    <option>E</option>
-                                 </select>
-                                 </div>
-                              </div>
-                           </div>
-                            <!-- sub drop downs -->
+                              <!-- sub drop downs -->
                            </div>
                         </div>
                         <div class="adm_inputs_wrap">
@@ -347,7 +348,6 @@
                            <label class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Classes Applicable</label>
                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 drop_down">
                               <label class="checkbox-inline"><input type="checkbox" checked value="">7 <sup>th</sup> Class</label>
-                              
                               <label class="checkbox-inline"><input type="checkbox" value="">8 <sup>th</sup> Class</label>
                               <label class="checkbox-inline"><input type="checkbox" value="">9 <sup>th</sup> Class</label>
                               <label class="checkbox-inline"><input type="checkbox" value="">10 <sup>th</sup> Class</label>
@@ -599,18 +599,17 @@
                   <div id="User_List" class="tab-pane fade">
                      <h2 class="col-lg-4 col-md-4 col-sm-4 col-xs-4 pull-left">User List</h2>
                      <div id="table-search-input">
-                     <div class="input-group col-md-4 pull-right">
-                              <input type="text" class="form-control input-lg" placeholder="Search" />
-                              <span class="input-group-btn">
-                              <button class="btn btn-info btn-lg" type="button">
-                              <i class="fa fa-search-plus"></i>
-                              </button>
-                              </span>
-                           </div>
+                        <div class="input-group col-md-4 pull-right">
+                           <input type="text" class="form-control input-lg" placeholder="Search" />
+                           <span class="input-group-btn">
+                           <button class="btn btn-info btn-lg" type="button">
+                           <i class="fa fa-search-plus"></i>
+                           </button>
+                           </span>
+                        </div>
                      </div>
                      <div class="user-list-header">
                         <div class="adm_inputs_wrap">
-                           
                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 drop_down">
                               <label>Institution</label>
                               <div class="form-group">
@@ -648,21 +647,21 @@
                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 drop_down">
                               <label>Role</label>
                               <select class="dropdown form-control" id="">
-                                    <option>Admin</option>
-                                    <option>Manager</option>
-                                    <option>Question Preparation</option>
-                                    <option >Student</option>
-                                    <option>Parent</option>
-                                 </select>
+                                 <option>Admin</option>
+                                 <option>Manager</option>
+                                 <option>Question Preparation</option>
+                                 <option >Student</option>
+                                 <option>Parent</option>
+                              </select>
                            </div>
                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 drop_down">
                               <label>State</label>
                               <select class="dropdown form-control" id="">
-                                    <option >Andhara Pradesh</option>
-                                    <option>Telangana</option>
-                                    <option>Tamilnadu</option>
-                                    <option>Arunachal Pradesh</option>
-                                 </select>
+                                 <option >Andhara Pradesh</option>
+                                 <option>Telangana</option>
+                                 <option>Tamilnadu</option>
+                                 <option>Arunachal Pradesh</option>
+                              </select>
                            </div>
                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 drop_down">
                               <button class="apply-btn">Apply</button>
@@ -671,195 +670,362 @@
                      </div>
                      <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                           
                            <button class="addnew-btn pull-left">Add new</button>
                         </div>
-                        </div>
-                        <div class="user-table">
-                           <table class="table table-bordered table-striped">
-                              <thead>
-                                 <tr>
-                                    <th scope="col">User Name</th>
-                                    <th scope="col">Role</th>
-                                    <th scope="col">School</th>
-                                    <th scope="col">Class</th>
-                                    <th scope="col">Actions</th>
-                                 </tr>
-                              </thead>
-                              <tbody>
-                                 <tr>
-                                    <td>Azad</td>
-                                    <td>Admin</td>
-                                    <td>VBHS</td>
-                                    <td>9</td>
-                                    <td class="sub-table">
-                                       <table class="table table-bordered table-striped">
-                                          <tbody>
-                                             <tr>
-                                                <td><a href="#" data-toggle="dropdown" title="View"><i class="fa fa-eye"></i></a></td>
-                                                <td><a href="#" data-toggle="dropdown" title="Edit"><i class="fa fa-pencil-square-o"></i></a></td>
-                                                <td><a href="#" data-toggle="dropdown" title="Delete"><i class="fa fa-trash"></i></a></td>
-                                             </tr>
-                                          </tbody>
-                                       </table>
-                                    </td>
-                                 </tr>
-                                 <tr>
-                                    <td>Wasim</td>
-                                    <td>Manager</td>
-                                    <td>Nalands</td>
-                                    <td>8</td>
-                                    <td class="sub-table">
-                                       <table class="table table-bordered table-striped">
-                                          <tbody>
-                                             <tr>
-                                                <td><a href="#" data-toggle="dropdown" title="View"><i class="fa fa-eye"></i></a></td>
-                                                <td><a href="#" data-toggle="dropdown" title="Edit"><i class="fa fa-pencil-square-o"></i></a></td>
-                                                <td><a href="#" data-toggle="dropdown" title="Delete"><i class="fa fa-trash"></i></a></td>
-                                             </tr>
-                                          </tbody>
-                                       </table>
-                                    </td>
-                                 </tr>
-                                 <tr>
-                                    <td>Akram</td>
-                                    <td>admin2</td>
-                                    <td>ZPHS</td>
-                                    <td>7</td>
-                                    <td class="sub-table">
-                                       <table class="table table-bordered table-striped">
-                                          <tbody>
-                                             <tr>
-                                                <td><a href="#" data-toggle="dropdown" title="View"><i class="fa fa-eye"></i></a></td>
-                                                <td><a href="#" data-toggle="dropdown" title="Edit"><i class="fa fa-pencil-square-o"></i></a></td>
-                                                <td><a href="#" data-toggle="dropdown" title="Delete"><i class="fa fa-trash"></i></a></td>
-                                             </tr>
-                                          </tbody>
-                                       </table>
-                                    </td>
-                                 </tr>
-                                 <tr>
-                                    <td>Akram</td>
-                                    <td>admin2</td>
-                                    <td>ZPHS</td>
-                                    <td>7</td>
-                                    <td class="sub-table">
-                                       <table class="table table-bordered table-striped">
-                                          <tbody>
-                                             <tr>
-                                                <td><a href="#" data-toggle="dropdown" title="View"><i class="fa fa-eye"></i></a></td>
-                                                <td><a href="#" data-toggle="dropdown" title="Edit"><i class="fa fa-pencil-square-o"></i></a></td>
-                                                <td><a href="#" data-toggle="dropdown" title="Delete"><i class="fa fa-trash"></i></a></td>
-                                             </tr>
-                                          </tbody>
-                                       </table>
-                                    </td>
-                                 </tr>
-                                 <tr>
-                                    <td>Akram</td>
-                                    <td>admin2</td>
-                                    <td>ZPHS</td>
-                                    <td>7</td>
-                                    <td class="sub-table">
-                                       <table class="table table-bordered table-striped">
-                                          <tbody>
-                                             <tr>
-                                                <td><a href="#" data-toggle="dropdown" title="View"><i class="fa fa-eye"></i></a></td>
-                                                <td><a href="#" data-toggle="dropdown" title="Edit"><i class="fa fa-pencil-square-o"></i></a></td>
-                                                <td><a href="#" data-toggle="dropdown" title="Delete"><i class="fa fa-trash"></i></a></td>
-                                             </tr>
-                                          </tbody>
-                                       </table>
-                                    </td>
-                                 </tr>
-                                 <tr>
-                                    <td>Akram</td>
-                                    <td>admin2</td>
-                                    <td>ZPHS</td>
-                                    <td>7</td>
-                                    <td class="sub-table">
-                                       <table class="table table-bordered table-striped">
-                                          <tbody>
-                                             <tr>
-                                                <td><a href="#" data-toggle="dropdown" title="View"><i class="fa fa-eye"></i></a></td>
-                                                <td><a href="#" data-toggle="dropdown" title="Edit"><i class="fa fa-pencil-square-o"></i></a></td>
-                                                <td><a href="#" data-toggle="dropdown" title="Delete"><i class="fa fa-trash"></i></a></td>
-                                             </tr>
-                                          </tbody>
-                                       </table>
-                                    </td>
-                                 </tr>
-                                 <tr>
-                                    <td>Akram</td>
-                                    <td>admin2</td>
-                                    <td>ZPHS</td>
-                                    <td>7</td>
-                                    <td class="sub-table">
-                                       <table class="table table-bordered table-striped">
-                                          <tbody>
-                                             <tr>
-                                                <td><a href="#" data-toggle="dropdown" title="View"><i class="fa fa-eye"></i></a></td>
-                                                <td><a href="#" data-toggle="dropdown" title="Edit"><i class="fa fa-pencil-square-o"></i></a></td>
-                                                <td><a href="#" data-toggle="dropdown" title="Delete"><i class="fa fa-trash"></i></a></td>
-                                             </tr>
-                                          </tbody>
-                                       </table>
-                                    </td>
-                                 </tr>
-                              </tbody>
-                           </table>
-                        </div>
-                     
+                     </div>
+                     <div class="user-table">
+                        <table class="table table-bordered table-striped">
+                           <thead>
+                              <tr>
+                                 <th scope="col">User Name</th>
+                                 <th scope="col">Role</th>
+                                 <th scope="col">School</th>
+                                 <th scope="col">Class</th>
+                                 <th scope="col">Actions</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td>Azad</td>
+                                 <td>Admin</td>
+                                 <td>VBHS</td>
+                                 <td>9</td>
+                                 <td class="sub-table">
+                                    <table class="table table-bordered table-striped">
+                                       <tbody>
+                                          <tr>
+                                             <td><a data-toggle="tab" href="#View_school_tab" aria-expanded="true" title="View"><i class="fa fa-eye"></i></a></td>
+                                             <td><a data-toggle="tab" href="#" aria-expanded="true" title="Edit"><i class="fa fa-pencil-square-o"></i></a></td>
+                                             <td><a data-toggle="tab" href="#" aria-expanded="true" title="Delete"><i class="fa fa-trash"></i></a></td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>Wasim</td>
+                                 <td>Manager</td>
+                                 <td>Nalands</td>
+                                 <td>8</td>
+                                 <td class="sub-table">
+                                    <table class="table table-bordered table-striped">
+                                       <tbody>
+                                          <tr>
+                                             <td><a href="#" data-toggle="dropdown" title="View"><i class="fa fa-eye"></i></a></td>
+                                             <td><a href="#" data-toggle="dropdown" title="Edit"><i class="fa fa-pencil-square-o"></i></a></td>
+                                             <td><a href="#" data-toggle="dropdown" title="Delete"><i class="fa fa-trash"></i></a></td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>Akram</td>
+                                 <td>admin2</td>
+                                 <td>ZPHS</td>
+                                 <td>7</td>
+                                 <td class="sub-table">
+                                    <table class="table table-bordered table-striped">
+                                       <tbody>
+                                          <tr>
+                                             <td><a href="#" data-toggle="dropdown" title="View"><i class="fa fa-eye"></i></a></td>
+                                             <td><a href="#" data-toggle="dropdown" title="Edit"><i class="fa fa-pencil-square-o"></i></a></td>
+                                             <td><a href="#" data-toggle="dropdown" title="Delete"><i class="fa fa-trash"></i></a></td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>Akram</td>
+                                 <td>admin2</td>
+                                 <td>ZPHS</td>
+                                 <td>7</td>
+                                 <td class="sub-table">
+                                    <table class="table table-bordered table-striped">
+                                       <tbody>
+                                          <tr>
+                                             <td><a href="#" data-toggle="dropdown" title="View"><i class="fa fa-eye"></i></a></td>
+                                             <td><a href="#" data-toggle="dropdown" title="Edit"><i class="fa fa-pencil-square-o"></i></a></td>
+                                             <td><a href="#" data-toggle="dropdown" title="Delete"><i class="fa fa-trash"></i></a></td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>Akram</td>
+                                 <td>admin2</td>
+                                 <td>ZPHS</td>
+                                 <td>7</td>
+                                 <td class="sub-table">
+                                    <table class="table table-bordered table-striped">
+                                       <tbody>
+                                          <tr>
+                                             <td><a href="#" data-toggle="dropdown" title="View"><i class="fa fa-eye"></i></a></td>
+                                             <td><a href="#" data-toggle="dropdown" title="Edit"><i class="fa fa-pencil-square-o"></i></a></td>
+                                             <td><a href="#" data-toggle="dropdown" title="Delete"><i class="fa fa-trash"></i></a></td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>Akram</td>
+                                 <td>admin2</td>
+                                 <td>ZPHS</td>
+                                 <td>7</td>
+                                 <td class="sub-table">
+                                    <table class="table table-bordered table-striped">
+                                       <tbody>
+                                          <tr>
+                                             <td><a href="#" data-toggle="dropdown" title="View"><i class="fa fa-eye"></i></a></td>
+                                             <td><a href="#" data-toggle="dropdown" title="Edit"><i class="fa fa-pencil-square-o"></i></a></td>
+                                             <td><a href="#" data-toggle="dropdown" title="Delete"><i class="fa fa-trash"></i></a></td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>Akram</td>
+                                 <td>admin2</td>
+                                 <td>ZPHS</td>
+                                 <td>7</td>
+                                 <td class="sub-table">
+                                    <table class="table table-bordered table-striped">
+                                       <tbody>
+                                          <tr>
+                                             <td><a href="#" data-toggle="dropdown" title="View"><i class="fa fa-eye"></i></a></td>
+                                             <td><a href="#" data-toggle="dropdown" title="Edit"><i class="fa fa-pencil-square-o"></i></a></td>
+                                             <td><a href="#" data-toggle="dropdown" title="Delete"><i class="fa fa-trash"></i></a></td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
                   </div>
-
-                   <!--User Profile starts here -->
+                  <!--User Profile starts here -->
                   <div id="User_Profile" class="tab-pane fade">
                      <h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">User Profile</h2>
-                    
                      <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
                         <div class="user-profile_container">
                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                               <div class="user-pro-pic">
-                              <img src="images/profile-pic.png" class="img-thumbnail" alt="Cinque Terre" width="200" height="236"> 
-                              <a href="#" data-toggle="dropdown" title="Edit">Change Image <i class="fa fa-pencil-square-o"></i></a>
+                                 <img src="images/profile-pic.png" class="img-thumbnail" alt="Cinque Terre" width="200" height="236"> 
+                                 <a href="#" data-toggle="dropdown" title="Edit">Change Image <i class="fa fa-pencil-square-o"></i></a>
                               </div>
                            </div>
                            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                               <div class="adm_inputs_wrap">
-                           <label class="col-lg-4 col-md-4 col-sm-12 col-xs-12">User Name <span class="mandatory">*</span></label>
-                           <input class="col-lg-8 col-md-8 col-sm-12 col-xs-12" type="text" placeholder="User Name" id="Username" name="Username" required="">
+                                 <label class="col-lg-4 col-md-4 col-sm-12 col-xs-12">User Name <span class="mandatory">*</span></label>
+                                 <input class="col-lg-8 col-md-8 col-sm-12 col-xs-12" type="text" placeholder="User Name" id="Username" name="Username" required="">
+                              </div>
+                              <div class="adm_inputs_wrap">
+                                 <label class="col-lg-4 col-md-4 col-sm-12 col-xs-12">Password</label>
+                                 <input class="col-lg-8 col-md-8 col-sm-12 col-xs-12" type="text" placeholder="Password" id="Password" name="Password" required="">
+                              </div>
+                              <div class="adm_inputs_wrap">
+                                 <label class="col-lg-4 col-md-4 col-sm-12 col-xs-12">Role</label>
+                                 <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 drop_down">
+                                    <div class="form-group">
+                                       <select class="dropdown form-control" id="sel1">
+                                          <option>Admin</option>
+                                          <option>Manager</option>
+                                          <option>Question Preparation</option>
+                                          <option>Student</option>
+                                          <option>Parent</option>
+                                       </select>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="adm_inputs_wrap">
+                                 <label class="col-lg-4 col-md-4 col-sm-12 col-xs-12">Last Login</label>
+                                 <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                    <span class="date">30 JULY 2018</span>
+                                 </div>
+                              </div>
+                              <div class="col-md-12">
+                                       <button class="signin-btn">Submit</button>
+                                    </div>
+                           </div>
                         </div>
-                        <div class="adm_inputs_wrap">
-                           <label class="col-lg-4 col-md-4 col-sm-12 col-xs-12">Password</label>
-                           <input class="col-lg-8 col-md-8 col-sm-12 col-xs-12" type="text" placeholder="Password" id="Password" name="Password" required="">
-                        </div>
-                        <div class="adm_inputs_wrap">
-                           <label class="col-lg-4 col-md-4 col-sm-12 col-xs-12">Role</label>
-                           <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 drop_down">
-                              <div class="form-group">
-                                 <select class="dropdown form-control" id="sel1">
-                                    <option>Admin</option>
-                                    <option>Manager</option>
-                                    <option>Question Preparation</option>
-                                    <option>Student</option>
-                                    <option>Parent</option>
-                                 </select>
+                     </div>
+                  </div>
+                  <!--User Profile starts here -->
+                  <div id="User_Profile1" class="tab-pane fade">
+                     <h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">User Profile1</h2>
+                     <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                        <ul class="nav nav-tabs">
+                           <li class="active"><a data-toggle="tab" href="#user-detail">User Details</a></li>
+                           <li><a data-toggle="tab" href="#parent-detail">Parent Details</a></li>
+                           <li><a data-toggle="tab" href="#user-prof">User Profile</a></li>
+                        </ul>
+                        <div class="tab-content">
+                           <div id="user-detail" class="tab-pane fade in active">
+                              <div class="user-profile_container userprof2">
+                                 <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                    <div class="adm_inputs_wrap">
+                                       <label class="col-lg-4 col-md-4 col-sm-4 col-xs-4">User Name</label>
+                                       <span class="user-static col-lg-8 col-md-8 col-sm-8 col-xs-8">Azaad Shaik</span>
+                                    </div>
+                                    <div class="adm_inputs_wrap">
+                                       <label class="col-lg-4 col-md-4 col-sm-4 col-xs-4">School</label>
+                                       <span class="user-static col-lg-8 col-md-8 col-sm-8 col-xs-8">Nalanda</span>
+                                    </div>
+                                    <div class="adm_inputs_wrap">
+                                       <label class="col-lg-4 col-md-4 col-sm-4 col-xs-4">Institute</label>
+                                       <span class="user-static col-lg-8 col-md-8 col-sm-8 col-xs-8">Nalanda Groups</span>
+                                    </div>
+                                    <div class="adm_inputs_wrap">
+                                       <label class="col-lg-4 col-md-4 col-sm-4 col-xs-4">Class</label>
+                                       <span class="user-static col-lg-8 col-md-8 col-sm-8 col-xs-8">8<sup>th</sup> Class</span>
+                                    </div>
+                                    <div class="adm_inputs_wrap">
+                                       <label class="col-lg-4 col-md-4 col-sm-4 col-xs-4">Section</label>
+                                       <span class="user-static col-lg-8 col-md-8 col-sm-8 col-xs-8">A</span>
+                                    </div>
+                                    <div class="adm_inputs_wrap">
+                                       <label class="col-lg-4 col-md-4 col-sm-4 col-xs-4">Registration Date</label>
+                                       <span class="user-static col-lg-8 col-md-8 col-sm-8 col-xs-8">01-10-2017</span>
+                                    </div>
+                                    <div class="adm_inputs_wrap">
+                                       <label class="col-lg-4 col-md-4 col-sm-4 col-xs-4">Last Login</label>
+                                       <span class="user-static col-lg-8 col-md-8 col-sm-8 col-xs-8">01-7-2018</span>
+                                    </div>
+                                    <div class="adm_inputs_wrap">
+                                       <label class="col-lg-4 col-md-4 col-sm-4 col-xs-4">Exams Attended</label>
+                                       <span class="user-static col-lg-8 col-md-8 col-sm-8 col-xs-8">10</span>
+                                    </div>
+                                    <div class="adm_inputs_wrap">
+                                       <label class="col-lg-4 col-md-4 col-sm-4 col-xs-4">Role</label>
+                                       <span class="user-static col-lg-8 col-md-8 col-sm-8 col-xs-8">Student</span>
+                                    </div>
+                                    
+                                 </div>
+                                
+                              </div>
+                           </div>
+                           <div id="parent-detail" class="tab-pane fade">
+                              <div class="user-profile_container userprof2">
+                                 <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                    <div class="adm_inputs_wrap">
+                                       <label class="col-lg-4 col-md-4 col-sm-4 col-xs-4">Parent Name</label>
+                                       <span class="user-static col-lg-8 col-md-8 col-sm-8 col-xs-8">Azaad Shaik</span>
+                                    </div>
+                                    <div class="adm_inputs_wrap">
+                                       <label class="col-lg-4 col-md-4 col-sm-4 col-xs-4">Location</label>
+                                       <span class="user-static col-lg-8 col-md-8 col-sm-8 col-xs-8">Kavali</span>
+                                    </div>
+                                    <div class="adm_inputs_wrap">
+                                       <label class="col-lg-4 col-md-4 col-sm-4 col-xs-4">Mobile Number</label>
+                                       <span class="user-static col-lg-8 col-md-8 col-sm-8 col-xs-8">989895959</span>
+                                    </div>
+                                    <div class="adm_inputs_wrap">
+                                       <label class="col-lg-4 col-md-4 col-sm-4 col-xs-4">Relation</label>
+                                       <span class="user-static col-lg-8 col-md-8 col-sm-8 col-xs-8">Father</span>
+                                    </div>
+                                    
+                                   
+                                 </div>
+                                 
+                              </div>
+                           </div>
+                           <div id="user-prof" class="tab-pane fade">
+                               <div class="user-profile_container userprof2">
+                                 <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                    <div class="adm_inputs_wrap">
+                                       <label class="col-lg-4 col-md-4 col-sm-4 col-xs-4">First Name</label>
+                                       <span class="user-static col-lg-8 col-md-8 col-sm-8 col-xs-8">Azaad</span>
+                                    </div>
+                                    <div class="adm_inputs_wrap">
+                                       <label class="col-lg-4 col-md-4 col-sm-4 col-xs-4">Last Name</label>
+                                       <span class="user-static col-lg-8 col-md-8 col-sm-8 col-xs-8">Shaik</span>
+                                    </div>
+                                    <div class="adm_inputs_wrap">
+                                       <label class="col-lg-4 col-md-4 col-sm-4 col-xs-4">User Id</label>
+                                       <span class="user-static col-lg-8 col-md-8 col-sm-8 col-xs-8">azzadshaik</span>
+                                    </div>
+                                    <div class="adm_inputs_wrap">
+                                       <label class="col-lg-4 col-md-4 col-sm-4 col-xs-4">Date Of Birth</label>
+                                       <span class="user-static col-lg-8 col-md-8 col-sm-8 col-xs-8">01-10-1992</span>
+                                    </div>
+                                   
+                                    <div class="adm_inputs_wrap">
+                                       <label class="col-lg-4 col-md-4 col-sm-4 col-xs-4">Registration Date</label>
+                                       <span class="user-static col-lg-8 col-md-8 col-sm-8 col-xs-8">01-10-2017</span>
+                                    </div>
+                                    <div class="adm_inputs_wrap">
+                                       <label class="col-lg-4 col-md-4 col-sm-4 col-xs-4">Last Login</label>
+                                       <span class="user-static col-lg-8 col-md-8 col-sm-8 col-xs-8">01-7-2018</span>
+                                    </div>
+                                    <div class="adm_inputs_wrap">
+                                       <label class="col-lg-4 col-md-4 col-sm-4 col-xs-4">Status</label>
+                                       <span class="user-static col-lg-8 col-md-8 col-sm-8 col-xs-8">Active</span>
+                                    </div>
+                                    
+                                    
+                                 </div>
+                                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                    <div class="user-pro-pic">
+                                       <img src="images/profile-pic.png" class="img-thumbnail" alt="Cinque Terre" width="200" height="236"> 
+                                       <a href="#" data-toggle="dropdown" title="Edit">Change Image <i class="fa fa-pencil-square-o"></i></a>
+                                    </div>
+                                 </div>
                               </div>
                            </div>
                         </div>
-                        <div class="adm_inputs_wrap">
-                           <label class="col-lg-4 col-md-4 col-sm-12 col-xs-12">Last Login</label>
-                           <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                              <span class="date">30 JULY 2018</span>
-                           </div>
-                        </div>
-                        <div class="col-md-12">
-                           <button class="signin-btn">Submit</button>
-                        </div>
-                           </div>
-
-                        </div>
                      </div>
+                  </div>
+
+                  <!--View School starts here -->
+                  <div id="View_school_tab" class="tab-pane fade">
+                     <h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">View School</h2>
+                     <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                    <div class="adm_inputs_wrap">
+                                       <label class="col-lg-4 col-md-4 col-sm-4 col-xs-4">School Name</label>
+                                       <span class="user-static col-lg-8 col-md-8 col-sm-8 col-xs-8">Nalanda</span>
+                                    </div>
+                                    <div class="adm_inputs_wrap">
+                                       <label class="col-lg-4 col-md-4 col-sm-4 col-xs-4">Institution Name</label>
+                                       <span class="user-static col-lg-8 col-md-8 col-sm-8 col-xs-8">Nalanda Groups</span>
+                                    </div>
+                                    <div class="adm_inputs_wrap">
+                                       <label class="col-lg-4 col-md-4 col-sm-4 col-xs-4">Institution Code</label>
+                                       <span class="user-static col-lg-8 col-md-8 col-sm-8 col-xs-8">InNal008</span>
+                                    </div>
+                                    <div class="adm_inputs_wrap">
+                                       <label class="col-lg-4 col-md-4 col-sm-4 col-xs-4">School Code</label>
+                                       <span class="user-static col-lg-8 col-md-8 col-sm-8 col-xs-8">Nal008</span>
+                                    </div>
+                                    <div class="adm_inputs_wrap">
+                                       <label class="col-lg-4 col-md-4 col-sm-4 col-xs-4">School State</label>
+                                       <span class="user-static col-lg-8 col-md-8 col-sm-8 col-xs-8">Andhra Pradesh</span>
+                                    </div>
+                                    <div class="adm_inputs_wrap">
+                                       <label class="col-lg-4 col-md-4 col-sm-4 col-xs-4">School District</label>
+                                       <span class="user-static col-lg-8 col-md-8 col-sm-8 col-xs-8">Nellore</span>
+                                    </div>
+                                    <div class="adm_inputs_wrap">
+                                       <label class="col-lg-4 col-md-4 col-sm-4 col-xs-4">School Address</label>
+                                       <span class="user-static col-lg-8 col-md-8 col-sm-8 col-xs-8">D.No: 10-11-06, Trunk Road, TowerA1, <br>PIN: 524202</span>
+                                    </div>
+                                    <div class="adm_inputs_wrap">
+                                       <label class="col-lg-4 col-md-4 col-sm-4 col-xs-4">School Principle</label>
+                                       <span class="user-static col-lg-8 col-md-8 col-sm-8 col-xs-8">Manoj</span>
+                                    </div>
+                                    <div class="adm_inputs_wrap">
+                                       <label class="col-lg-4 col-md-4 col-sm-4 col-xs-4">Mobile</label>
+                                       <span class="user-static col-lg-8 col-md-8 col-sm-8 col-xs-8">9858545856</span>
+                                    </div>
+                                    <div class="adm_inputs_wrap">
+                                       <label class="col-lg-4 col-md-4 col-sm-4 col-xs-4">Classes Available</label>
+                                       <span class="user-static col-lg-8 col-md-8 col-sm-8 col-xs-8">10</span>
+                                    </div>
+                                 </div>
                   </div>
                </div>
             </div>
