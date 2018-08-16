@@ -418,6 +418,9 @@ footer{
 #View_school_tab .adm_inputs_wrap .user-static{
     margin: 5px 0 !important;
 }
+#User_Profile1 .nav-tabs li a{color:#ffffff;}
+#User_Profile1 .nav-tabs li a:hover,#User_Profile1 .nav-tabs li.active a:hover{color:#f3db14;background: transparent;}
+#User_Profile1 .nav-tabs li.active a{color:#555555;}
 .custom-file-upload{display:inline-block;width: 100%;    margin: 10px 0;}
 .custom-file-upload input[type="file"] {
     display: none;
