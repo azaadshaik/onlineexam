@@ -602,7 +602,10 @@ footer p {
     border-radius: 42px;
     color: #ffffff;
     left: 15px;}
-
+.user_container .user_inp_search::placeholder {
+    color: #ffffff;
+    opacity:0.5; /* Firefox */
+}
 .user_body .user_body_left .nav-tabs>li{ background: #3d4a53;
     width: 100%;
     text-align: center;
