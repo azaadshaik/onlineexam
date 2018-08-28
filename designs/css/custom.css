@@ -677,8 +677,42 @@ footer p {
   }
 }
 
+@media (max-width:321px){
+.user_header{height:auto;max-height:initial;}
+.user_body .user_body_left .nav-tabs>li.one:before,
+.user_body .user_body_left .nav-tabs>li.two:before,
+.user_body .user_body_left .nav-tabs>li.three:before,
+.user_body .user_body_left .nav-tabs>li.four:before,
+.user_body .user_body_left .nav-tabs>li.five:before,
+.user_body .user_body_left .nav-tabs>li.six:before{left:20px;font-size: 40px;}
+.user_content {
+    padding: 5px 10px;
+}
+.adm_inputs_wrap{margin:0;}
+.user_header div+div{max-height:110px;}
+.user_header div+div+div{max-height:78px;}
+}
 
 
+
+
+@media only screen and (min-device-width: 322px) and (max-device-height:568px){
+.user_header div+div{max-height: 83px;}
+.user_header div+div+div{max-height:78px;}
+.user_content {
+    padding:0px 20px;
+}
+.user_header{
+  height:auto;max-height:initial;
+}
+.signin-btn{margin-top: 10px;}
+.user_body .user_body_left .nav-tabs>li.one:before,
+.user_body .user_body_left .nav-tabs>li.two:before,
+.user_body .user_body_left .nav-tabs>li.three:before,
+.user_body .user_body_left .nav-tabs>li.four:before,
+.user_body .user_body_left .nav-tabs>li.five:before,
+.user_body .user_body_left .nav-tabs>li.six:before{display: none;}
+}
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 /* Styles */
