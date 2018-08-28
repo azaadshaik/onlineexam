@@ -676,3 +676,31 @@ footer p {
     padding:0 15px !important;
   }
 }
+
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+.user_body .user_body_left .nav-tabs>li.one:before,
+.user_body .user_body_left .nav-tabs>li.two:before,
+.user_body .user_body_left .nav-tabs>li.three:before,
+.user_body .user_body_left .nav-tabs>li.four:before,
+.user_body .user_body_left .nav-tabs>li.five:before,
+.user_body .user_body_left .nav-tabs>li.six:before{left: 63px;}
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+.user_inp_section{padding: 8.5px 20px;}
+.user_body .user_body_left .nav-tabs>li.one:before,
+.user_body .user_body_left .nav-tabs>li.two:before,
+.user_body .user_body_left .nav-tabs>li.three:before,
+.user_body .user_body_left .nav-tabs>li.four:before,
+.user_body .user_body_left .nav-tabs>li.five:before,
+.user_body .user_body_left .nav-tabs>li.six:before{left:75px;}
+}
